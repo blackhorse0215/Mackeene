@@ -26,7 +26,9 @@
         <div class="productDetail__globalInformations">
           <h1 class="productDetail__title u-hidden-mobile">{{ product.title | escape }}</h1>
           <h2 class="productDetail__collection u-hidden-desktop">LE PAPIER</h2>
-          <p class="productDetail__description">Pillow tote.</p>
+          {%- if product.metafields.mackeene.features_label -%}
+            <p class="productDetail__description">{{ product.metafields.mackeene.features_label }}</p>
+          {%- endif -%}
           <div class="productDetail__attributes -color" id="colorWrapper" data-attr="color" style="--max-height:80px;">
             <div class="productDetail__swatchesWrapper">
               <ul class="productDetail__swatchesWrapper__list">
@@ -180,9 +182,11 @@
           <button class="productDetail__subInformations__button" data-index="1">
             Delivery and returns
           </button>
-          <button class="productDetail__subInformations__button" data-index="2">
-            Assistance
-          </button>
+          {% if product.metafields.mackeene.instructions %}
+            <button class="productDetail__subInformations__button" data-index="2">
+              Instruction
+            </button>
+          {% endif %}
         </div>
         <div class="productDetail__detailsBorder">
           <span class="productDetail__detailsBorder__border" id="productDetailsBorder"></span>
@@ -190,24 +194,19 @@
         <div class="productDetail__detailsPanel" id="detailsPanel">
           <div class="productDetail__detailsPanel__wrapper">
             <div class="productDetail__detailsPanel__content">
-              <h2 class="productDetail__collection">LE PAPIER</h2>
-              Pillow tote<br>
-              <br>
-              - Padded cotton tote bag <br>
-              - Soft construction<br>
-              - Padded straps with knots in the front <br>
-              - T-bar closure <br>
-              - Silver metal logo and hardware<br>
-              - Stitched edges <br>
-              - 36.5 x 20 x 45 cm
-              <h4>100% Polyamide/Nylon</h4>
-              <h4>
-                Made in
-                Spain
-              </h4>
+              {%- comment -%} <h2 class="productDetail__collection">LE PAPIER</h2> {%- endcomment -%}
+              
+              {{ product.description }}
+              
+              {% if product.metafields.mackeene.materials_label %}
+                <h4>{{ product.metafields.mackeene.materials_label }}</h4>
+              {% endif %}
+              {% if product.metafields.mackeene.country_of_manufacture %}
+                <h4>{{ product.metafields.mackeene.country_of_manufacture }}</h4>
+              {% endif %}
               <h4>
                 Ref.
-                226BA035-1320-990
+                {{ product.selected_or_first_available_variant.sku }}
               </h4>
             </div>
             <div class="productDetail__detailsPanel__content">
@@ -235,24 +234,13 @@
                 </p>
               </div>
             </div>
-            <div class="productDetail__detailsPanel__content">
-              <div class="content-asset">
-                <p>
-                  <strong>
-                    <em>Email us</em>
-                  </strong><br>
-                  <a href="mailto:customercare@jacquemus.com">customercare@jacquemus.com</a>
-                </p>
-                <p>&nbsp;</p>
-                <p>
-                  <strong>
-                    <em>Or visit the
-                      <a href="https://www.jacquemus.com/en_fr/contact-us">Customer section.</a>
-                    </em>
-                  </strong>
-                </p>
+            {% if product.metafields.mackeene.instructions %}
+              <div class="productDetail__detailsPanel__content">
+                <div class="content-asset">
+                  {{ product.metafields.mackeene.instructions }}
+                </div>
               </div>
-            </div>
+            {% endif %}
           </div>
           <span class="productDetail__detailsPanel__close" id="detailsPanelClose"></span>
         </div>

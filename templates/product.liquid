@@ -3,6 +3,8 @@
 {% section 'recently-viewed-products' %}
 
 <script>
-  window.ShopifyXR=window.ShopifyXR||function(){(ShopifyXR.q=ShopifyXR.q||[]).push(arguments)};
+  window.ShopifyXR = window.ShopifyXR || function() {
+    (ShopifyXR.q = ShopifyXR.q || []).push(arguments)
+  };
   ShopifyXR('addModels', {{ product.media | where: 'media_type', 'model' | json }});
 </script>

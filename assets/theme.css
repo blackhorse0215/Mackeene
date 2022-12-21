@@ -1134,7 +1134,6 @@ body {
 }
 
 .Heading {
-  font-family: var(--heading-font-family);
   font-weight: var(--heading-font-weight);
   font-style: var(--heading-font-style);
   color: var(--heading-color);
@@ -10385,8 +10384,8 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
 
 @supports (--css: variables) {
   .js .Slideshow--fullscreen {
-    height: calc(var(--window-height) - (var(--header-height) * 0) - 0px);
-    height: calc(var(--window-height) - (var(--header-height) * var(--header-is-not-transparent, 0)) - var(--announcement-bar-height, 0px));
+    /* height: calc(var(--window-height) - (var(--header-height) * 0) - 0px); */
+    /* height: calc(var(--window-height) - (var(--header-height) * var(--header-is-not-transparent, 0)) - var(--announcement-bar-height, 0px)); */
     max-height: 100vh;
   }
 }

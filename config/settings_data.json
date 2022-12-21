@@ -80,6 +80,19 @@
       },
       "header": {
         "type": "header",
+        "blocks": {
+          "440e1b12-8024-4e74-932e-b24b294b2524": {
+            "type": "mega_menu",
+            "settings": {
+              "navigation_mega_menu": "Shop",
+              "push_1_image": "shopify:\/\/shop_images\/MACKEENE_-_Web_slides_1.png",
+              "push_1_url": "shopify:\/\/products\/jacket-vareuse-doris-01-navy"
+            }
+          }
+        },
+        "block_order": [
+          "440e1b12-8024-4e74-932e-b24b294b2524"
+        ],
         "settings": {
           "main_menu": "header",
           "search_menu": "search"
@@ -431,7 +444,7 @@
       "recently-viewed-products": {
         "type": "recently-viewed-products",
         "settings": {
-          "show_section": true,
+          "show_section": false,
           "title": "Recently viewed",
           "show_product_info": true,
           "show_vendor": false,
@@ -450,17 +463,13 @@
       },
       "product-template": {
         "type": "product-template",
-        "settings": {
-        }
+        "settings": {}
       },
       "product-recommendations": {
         "type": "product-recommendations",
         "settings": {
           "show_product_recommendations": true,
-          "heading": "You may also like",
-          "show_product_info": true,
-          "show_vendor": false,
-          "show_color_swatch": false
+          "heading": "Related products"
         }
       },
       "popup": {
@@ -502,8 +511,7 @@
         "block_order": [
           "page-contact-template-0"
         ],
-        "settings": {
-        }
+        "settings": {}
       },
       "blog-template": {
         "type": "blog-template",
@@ -550,7 +558,7 @@
             "type": "collection",
             "settings": {
               "collection": "bags-pouches",
-              "image": "shopify:\/\/shop_images\/2_cebc061c-bee5-493b-89a6-7b9fd702910a.png",
+              "image": "shopify:\/\/shop_images\/Untitled_design-37.png",
               "image_alignment": "center center",
               "content_position": "bottomLeft"
             }
@@ -566,6 +574,7 @@
           },
           "f11177da-8b79-43e7-8e13-819772727ef2-1670408808b91407a3-2": {
             "type": "collection",
+            "disabled": true,
             "settings": {
               "collection": "",
               "image": "shopify:\/\/shop_images\/MACKEENE_-_Web_slides-2.png",
@@ -575,6 +584,7 @@
           },
           "fa3ee745-4437-4c8a-9d40-ba36fc7d4904": {
             "type": "collection",
+            "disabled": true,
             "settings": {
               "collection": "",
               "image": "shopify:\/\/shop_images\/MACKEENE_-_Web_slides_2.png",
@@ -584,6 +594,7 @@
           },
           "b7617b17-c674-48aa-a641-d67281eb2712": {
             "type": "collection",
+            "disabled": true,
             "settings": {
               "collection": "",
               "image": "shopify:\/\/shop_images\/MACKEENE_-_Web_slides_1.png",
@@ -612,7 +623,7 @@
           "609b251c-380c-4620-9cfd-b5f4b730af16-16704088089308d7eb-0": {
             "type": "collection",
             "settings": {
-              "collection": "all",
+              "collection": "swim-shorts-barth4",
               "grid_items_count": 4
             }
           }
@@ -627,9 +638,59 @@
           "grid_mobile_items_per_row": "2",
           "grid_desktop_items_per_row": 4
         }
+      },
+      "0a974e8e-bf0e-424b-b5db-e94a28f3281c": {
+        "type": "slideshow",
+        "blocks": {
+          "642e3495-a711-446b-97cf-72e83e90cf77": {
+            "type": "video",
+            "settings": {
+              "video_url": "https:\/\/www.youtube.com\/watch?v=GqUWqQhdQAU",
+              "mobile_video_url": "https:\/\/www.youtube.com\/watch?v=GqUWqQhdQAU",
+              "apply_overlay": false,
+              "content_position": "bottomCenter",
+              "subheading": "",
+              "title": "",
+              "button_1_text": "SEE MORE",
+              "button_1_link": "",
+              "button_2_text": "",
+              "button_2_link": ""
+            }
+          },
+          "0a974e8e-bf0e-424b-b5db-e94a28f3281c-167085709472da8b9c-0": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/E827900B-E8BB-4F26-A941-91C464FF424E.jpg",
+              "mobile_image": "shopify:\/\/shop_images\/MACKEENE_-_Web_slides_Mobile.png",
+              "apply_overlay": false,
+              "content_position": "bottomCenter",
+              "subheading": "A curated selection of special gifts to celebrate the season",
+              "title": "The Gift Guide",
+              "button_1_text": "Discover Now",
+              "button_1_link": "shopify:\/\/collections\/love-go-slow",
+              "button_2_text": "",
+              "button_2_link": ""
+            }
+          }
+        },
+        "block_order": [
+          "642e3495-a711-446b-97cf-72e83e90cf77",
+          "0a974e8e-bf0e-424b-b5db-e94a28f3281c-167085709472da8b9c-0"
+        ],
+        "settings": {
+          "show_fullscreen": true,
+          "show_arrow": false,
+          "autoplay": true,
+          "cycle_speed": 5,
+          "text_color": "#ffffff",
+          "button_color": "#ffffff",
+          "button_background": "#ffffff",
+          "header_color": "#efefef"
+        }
       }
     },
     "content_for_index": [
+      "0a974e8e-bf0e-424b-b5db-e94a28f3281c",
       "f11177da-8b79-43e7-8e13-819772727ef2",
       "609b251c-380c-4620-9cfd-b5f4b730af16"
     ]
@@ -699,13 +760,11 @@
         },
         "header": {
           "type": "header",
-          "settings": {
-          }
+          "settings": {}
         },
         "footer": {
           "type": "footer",
-          "settings": {
-          }
+          "settings": {}
         },
         "slideshow": {
           "type": "slideshow",
@@ -942,14 +1001,12 @@
         },
         "product-template": {
           "type": "product-template",
-          "settings": {
-          }
+          "settings": {}
         },
         "product-recommendations": {
           "type": "product-recommendations",
           "settings": {
-            "show_product_recommendations": true,
-            "show_product_info": true
+            "show_product_recommendations": true
           }
         }
       },
@@ -1027,13 +1084,11 @@
         },
         "header": {
           "type": "header",
-          "settings": {
-          }
+          "settings": {}
         },
         "footer": {
           "type": "footer",
-          "settings": {
-          }
+          "settings": {}
         },
         "slideshow": {
           "type": "slideshow",
@@ -1270,14 +1325,12 @@
         },
         "product-template": {
           "type": "product-template",
-          "settings": {
-          }
+          "settings": {}
         },
         "product-recommendations": {
           "type": "product-recommendations",
           "settings": {
-            "show_product_recommendations": true,
-            "show_product_info": true
+            "show_product_recommendations": true
           }
         }
       },
@@ -1356,13 +1409,11 @@
         },
         "header": {
           "type": "header",
-          "settings": {
-          }
+          "settings": {}
         },
         "footer": {
           "type": "footer",
-          "settings": {
-          }
+          "settings": {}
         },
         "slideshow": {
           "type": "slideshow",
@@ -1599,14 +1650,12 @@
         },
         "product-template": {
           "type": "product-template",
-          "settings": {
-          }
+          "settings": {}
         },
         "product-recommendations": {
           "type": "product-recommendations",
           "settings": {
-            "show_product_recommendations": true,
-            "show_product_info": true
+            "show_product_recommendations": true
           }
         }
       },

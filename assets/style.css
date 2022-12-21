@@ -18002,7 +18002,7 @@ div.availability {
 
 @font-face {
   font-family: "Futura PTT";
-  src: url("../fonts/FuturaPTBook.woff2") format("woff2"), url(../fonts/FuturaPTBook.woff) format("woff");
+  src: url("FuturaPTBook.woff2") format("woff2"), url(FuturaPTBook.woff) format("woff");
   font-weight: 400;
   font-style: normal;
   font-stretch: normal;
@@ -18011,7 +18011,7 @@ div.availability {
 
 @font-face {
   font-family: "Futura PTT";
-  src: url("../fonts/FuturaPTMedium.woff2") format("woff2"), url("../fonts/FuturaPTMedium.woff") format("woff");
+  src: url("FuturaPTMedium.woff2") format("woff2"), url("FuturaPTMedium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
   font-stretch: normal;
@@ -18503,10 +18503,6 @@ img:not(.initial) {
 
 img.loaded {
   opacity: 1
-}
-
-img:not([src]) {
-  visibility: hidden
 }
 
 p, ul {
