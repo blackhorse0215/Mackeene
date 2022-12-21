@@ -1,0 +1,807 @@
+<div class="productDetail" data-pid="226BA035-1320-990">
+  <div class="productDetail__main" id="productDetailMain">
+    <div class="productDetail__background" id="productDetailBackground"></div>
+    <div class="productDetail__visuals">
+      <div class="productDetail__visuals__wrapper" id="imagesWrapper">
+        {%- for media in product.media -%}
+          <img class="productDetail__visuals__content productDetail__visuals__trigger" src="{{ media | img_url: 'master' }}" alt="{{ media.alt | escape }}" title="{{ product.title | escape }}" data-index="{{ forloop.index0 }}" itemprop="image" style="visibility: visible;">
+        {%- endfor -%}
+        <div class="productDetail__visuals__listWrapper">
+          <ul class="productDetail__visuals__list" id="visualsList">
+            <li class="productDetail__visuals__node" data-value="0"></li>
+            <li class="productDetail__visuals__node" data-value="1"></li>
+            <li class="productDetail__visuals__node" data-value="2"></li>
+            <li class="productDetail__visuals__node -active" data-value="3"></li>
+          </ul>
+        </div>
+        <div class="productDetail__visuals__wishlistWrapper">
+          <div id="wishlistComponent" class="productDetail__visuals__wishlist" data-url="/on/demandware.store/Sites-Jacquemus-Site/en_FR/WishList-Update">
+            <button id="addToWishlist" class="productDetail__visuals__wishlistCTA" data-action="add" data-pid="226BA035-1320-990"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="productDetail__informations">
+      <div class="productDetail__informations__wrapper" id="informationsWrapper">
+        <div class="productDetail__globalInformations">
+          <h1 class="productDetail__title u-hidden-mobile">{{ product.title | escape }}</h1>
+          <h2 class="productDetail__collection u-hidden-desktop">LE PAPIER</h2>
+          <p class="productDetail__description">Pillow tote.</p>
+          <div class="productDetail__attributes -color" id="colorWrapper" data-attr="color" style="--max-height:80px;">
+            <div class="productDetail__swatchesWrapper">
+              <ul class="productDetail__swatchesWrapper__list">
+                <div class="productDetail__swatchesWrapper__mobile">
+                  <p>Black</p>
+                  <div class="productDetail__swatchesWrapper__color -mobile" style="--background-color: #000000"></div>
+                  <p class="productDetail__swatchesWrapper__mobileBody">
+                    More colors
+                  </p>
+                </div>
+                <span class="productDetail__swatchesWrapper__generateColor -default" id="swatchMainColor">Black</span>
+                <span class="productDetail__swatchesWrapper__generateColor -generated" id="swatchGeneratedColor"></span>
+                <li class="-selected">
+                  <a data-value="Black" class="productDetail__swatchesWrapper__color  -selected" style="--background-color: #000000" href="https://www.jacquemus.com/en_fr/le-cuscinu/226BA035-1320-990.html?cgid=Bags_men"></a>
+                </li>
+                <li class="">
+                  <a data-value="Light Greige" class="productDetail__swatchesWrapper__color  " style="--background-color: #e6d6a8" href="https://www.jacquemus.com/en_fr/le-cuscinu/226BA035-3083-140.html?cgid=Bags_men"></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="productDetail__attributes -size" id="sizeWrapper" data-attr="size">
+            <div class="productDetail__sizesWrapper" id="productSizesWrapper">
+              <div class="productDetail__sizesWrapper__top">
+                <h3 class="u-hidden-mobile">Size</h3>
+                <button id="sizeGuideOpen">Size guide</button>
+              </div>
+              <ul class="productDetail__sizesWrapper__list">
+                <li>
+                  <button data-value="XXS"
+                    data-url="https://www.jacquemus.com/on/demandware.store/Sites-Jacquemus-Site/en_FR/Product-Variation?dwvar_226KN065-2108-390_color=390&amp;dwvar_226KN065-2108-390_size=XXS&amp;pid=226KN065-2108-390&amp;quantity=1"
+                    class="productDetail__sizesWrapper__size add-to-cart-mobile  "
+                    data-gtmdata="{&quot;id&quot;:&quot;226KN065-2108-390&quot;,&quot;name&quot;:&quot;La maille Gardian&quot;,&quot;price&quot;:&quot;395.00&quot;}"
+                    data-gtmga4data="{&quot;item_id&quot;:&quot;226KN065&quot;,&quot;item_name&quot;:&quot;LA MAILLE GARDIAN&quot;,&quot;item_variant&quot;:&quot;226KN065-2108-390&quot;,&quot;price&quot;:&quot;395.00&quot;,&quot;currencyCode&quot;:&quot;EUR&quot;}">
+                    XXS
+                  </button>
+                </li>
+                <li>
+                  <button data-value="XS"
+                    data-url="https://www.jacquemus.com/on/demandware.store/Sites-Jacquemus-Site/en_FR/Product-Variation?dwvar_226KN065-2108-390_color=390&amp;dwvar_226KN065-2108-390_size=XS&amp;pid=226KN065-2108-390&amp;quantity=1"
+                    class="productDetail__sizesWrapper__size add-to-cart-mobile  "
+                    data-gtmdata="{&quot;id&quot;:&quot;226KN065-2108-390&quot;,&quot;name&quot;:&quot;La maille Gardian&quot;,&quot;price&quot;:&quot;395.00&quot;}"
+                    data-gtmga4data="{&quot;item_id&quot;:&quot;226KN065&quot;,&quot;item_name&quot;:&quot;LA MAILLE GARDIAN&quot;,&quot;item_variant&quot;:&quot;226KN065-2108-390&quot;,&quot;price&quot;:&quot;395.00&quot;,&quot;currencyCode&quot;:&quot;EUR&quot;}">
+                    XS
+                  </button>
+                </li>
+                <li>
+                  <button data-value="S"
+                    data-url="https://www.jacquemus.com/on/demandware.store/Sites-Jacquemus-Site/en_FR/Product-Variation?dwvar_226KN065-2108-390_color=390&amp;dwvar_226KN065-2108-390_size=S&amp;pid=226KN065-2108-390&amp;quantity=1"
+                    class="productDetail__sizesWrapper__size add-to-cart-mobile  "
+                    data-gtmdata="{&quot;id&quot;:&quot;226KN065-2108-390&quot;,&quot;name&quot;:&quot;La maille Gardian&quot;,&quot;price&quot;:&quot;395.00&quot;}"
+                    data-gtmga4data="{&quot;item_id&quot;:&quot;226KN065&quot;,&quot;item_name&quot;:&quot;LA MAILLE GARDIAN&quot;,&quot;item_variant&quot;:&quot;226KN065-2108-390&quot;,&quot;price&quot;:&quot;395.00&quot;,&quot;currencyCode&quot;:&quot;EUR&quot;}">
+                    S
+                  </button>
+                </li>
+                <li>
+                  <button data-value="M" data-url="" class="productDetail__sizesWrapper__size add-to-cart-mobile -disabled "
+                    data-gtmdata="{&quot;id&quot;:&quot;226KN065-2108-390&quot;,&quot;name&quot;:&quot;La maille Gardian&quot;,&quot;price&quot;:&quot;395.00&quot;}"
+                    data-gtmga4data="{&quot;item_id&quot;:&quot;226KN065&quot;,&quot;item_name&quot;:&quot;LA MAILLE GARDIAN&quot;,&quot;item_variant&quot;:&quot;226KN065-2108-390&quot;,&quot;price&quot;:&quot;395.00&quot;,&quot;currencyCode&quot;:&quot;EUR&quot;}">
+                    M
+                    <p>
+                      Notify me
+                    </p>
+                  </button>
+                </li>
+                <li>
+                  <button data-value="L" data-url="" class="productDetail__sizesWrapper__size add-to-cart-mobile -disabled "
+                    data-gtmdata="{&quot;id&quot;:&quot;226KN065-2108-390&quot;,&quot;name&quot;:&quot;La maille Gardian&quot;,&quot;price&quot;:&quot;395.00&quot;}"
+                    data-gtmga4data="{&quot;item_id&quot;:&quot;226KN065&quot;,&quot;item_name&quot;:&quot;LA MAILLE GARDIAN&quot;,&quot;item_variant&quot;:&quot;226KN065-2108-390&quot;,&quot;price&quot;:&quot;395.00&quot;,&quot;currencyCode&quot;:&quot;EUR&quot;}">
+                    L
+                    <p>
+                      Notify me
+                    </p>
+                  </button>
+                </li>
+                <li>
+                  <button data-value="XL" data-url="" class="productDetail__sizesWrapper__size add-to-cart-mobile -disabled "
+                    data-gtmdata="{&quot;id&quot;:&quot;226KN065-2108-390&quot;,&quot;name&quot;:&quot;La maille Gardian&quot;,&quot;price&quot;:&quot;395.00&quot;}"
+                    data-gtmga4data="{&quot;item_id&quot;:&quot;226KN065&quot;,&quot;item_name&quot;:&quot;LA MAILLE GARDIAN&quot;,&quot;item_variant&quot;:&quot;226KN065-2108-390&quot;,&quot;price&quot;:&quot;395.00&quot;,&quot;currencyCode&quot;:&quot;EUR&quot;}">
+                    XL
+                    <p>
+                      Notify me
+                    </p>
+                  </button>
+                </li>
+                <li>
+                  <button data-value="XXL" data-url="" class="productDetail__sizesWrapper__size add-to-cart-mobile -disabled "
+                    data-gtmdata="{&quot;id&quot;:&quot;226KN065-2108-390&quot;,&quot;name&quot;:&quot;La maille Gardian&quot;,&quot;price&quot;:&quot;395.00&quot;}"
+                    data-gtmga4data="{&quot;item_id&quot;:&quot;226KN065&quot;,&quot;item_name&quot;:&quot;LA MAILLE GARDIAN&quot;,&quot;item_variant&quot;:&quot;226KN065-2108-390&quot;,&quot;price&quot;:&quot;395.00&quot;,&quot;currencyCode&quot;:&quot;EUR&quot;}">
+                    XXL
+                    <p>
+                      Notify me
+                    </p>
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="productDetail__addToCart u-hidden-mobile">
+            <p class="productDetail__addToCart__errorMsg" id="addedToCartMessageError"></p>
+            <button id="addToCartBtn" class="add-to-cart -clickable" data-url="/on/demandware.store/Sites-Jacquemus-Site/en_FR/Cart-AddProduct" data-pid="3700943157546" data-gtmdata="{&quot;id&quot;:&quot;226BA035-1320-990&quot;,&quot;name&quot;:&quot;Le Cuscinu&quot;,&quot;category&quot;:&quot;Bags&quot;,&quot;categoryID&quot;:&quot;Bags/women&quot;,&quot;price&quot;:&quot;765.00&quot;}" data-gtmga4data="{&quot;item_id&quot;:&quot;226BA035&quot;,&quot;item_name&quot;:&quot;LE CUSCINU&quot;,&quot;item_variant&quot;:&quot;226BA035-1320-990&quot;,&quot;item_category&quot;:&quot;Bags&quot;,&quot;price&quot;:&quot;765.00&quot;,&quot;currencyCode&quot;:&quot;EUR&quot;}">
+              <div class="productDetail__addToCart__inside -default" id="addToCartDefault">
+                <span class="productDetail__addToCart__add -hidden" id="addToCartWaitlistDefault">
+                  Waitlist
+                </span>
+                <span class="productDetail__addToCart__add" id="addToCartAddDefault">
+                  Add
+                </span>
+                <span class="productDetail__addToCart__price">
+
+
+
+                  <div class="product__price">
+
+
+
+                    <span>
+
+
+                      <span class="product__price__value">
+                        765 EUR
+
+
+                      </span>
+
+                    </span>
+                  </div>
+
+
+                </span>
+              </div>
+              <div class="productDetail__addToCart__inside -select">
+                Select a size
+              </div>
+              <div class="productDetail__addToCart__inside -added" id="addedToCart">
+                <span class="productDetail__addToCart__add" id="addedToCartMessage"></span>
+                <a href="https://www.jacquemus.com/en_fr/checkout">
+                  Checkout
+                </a>
+              </div>
+            </button>
+
+            <input type="hidden" name="add_to_cart_valid_timestamp" value="" autocomplete="off">
+            <input type="hidden" name="csrf_token" value="g3Dox-VaxQyzepk9GpwoJhJ1iEcHVcHQZiwESfz8GVdzAfDGyv9cjq3fDccTRm4ccXOVaENOrR0YRA_6zeEU-CaKaA4_6bSjqnFdGr6pssCjjvxbvOy7Iog1cHquACi0tQ0i80UwmrU0ubq36j7jG-OeGDTbQeAEXNJeUk2B5SP5pO0pxf8=">
+          </div>
+        </div>
+        <div class="productDetail__subInformations">
+          <button class="productDetail__subInformations__button" data-index="0">
+            Details
+          </button>
+          <button class="productDetail__subInformations__button" data-index="1">
+            Delivery and returns
+          </button>
+          <button class="productDetail__subInformations__button" data-index="2">
+            Assistance
+          </button>
+        </div>
+        <div class="productDetail__detailsBorder">
+          <span class="productDetail__detailsBorder__border" id="productDetailsBorder"></span>
+        </div>
+        <div class="productDetail__detailsPanel" id="detailsPanel">
+          <div class="productDetail__detailsPanel__wrapper">
+            <div class="productDetail__detailsPanel__content">
+              <h2 class="productDetail__collection">LE PAPIER</h2>
+              Pillow tote<br>
+              <br>
+              - Padded cotton tote bag <br>
+              - Soft construction<br>
+              - Padded straps with knots in the front <br>
+              - T-bar closure <br>
+              - Silver metal logo and hardware<br>
+              - Stitched edges <br>
+              - 36.5 x 20 x 45 cm
+              <h4>100% Polyamide/Nylon</h4>
+              <h4>
+                Made in
+                Spain
+              </h4>
+              <h4>
+                Ref.
+                226BA035-1320-990
+              </h4>
+            </div>
+            <div class="productDetail__detailsPanel__content">
+              <div class="content-asset">
+                <p>For your Christmas shopping, we recommend to order prior to December 19th.&nbsp;</p>
+                <p>&nbsp;</p>
+                <p>Standard Delivery - complimentary<br>
+                  <strong>within 2 to 4&nbsp;working days&nbsp;</strong>
+                </p>
+                <p>Access Point Delivery - complimentary<br>
+                  <strong>within 2 to 6&nbsp;working days&nbsp;</strong>
+                </p>
+                <p>Express Delivery&nbsp;<br>
+                  <strong>within 1&nbsp;to 2&nbsp;working days&nbsp;</strong>
+                </p>
+                <p>&nbsp;</p>
+                <p>During Christmas period, extended free returns offered until January 15th.&nbsp;</p>
+                <p>&nbsp;</p>
+                <p>
+                  <em>
+                    <strong>For more details, read our
+                      <a href="https://www.jacquemus.com/assistance/returns-and-exchanges">return policy.</a>
+                    </strong>
+                  </em>
+                </p>
+              </div>
+            </div>
+            <div class="productDetail__detailsPanel__content">
+              <div class="content-asset">
+                <p>
+                  <strong>
+                    <em>Email us</em>
+                  </strong><br>
+                  <a href="mailto:customercare@jacquemus.com">customercare@jacquemus.com</a>
+                </p>
+                <p>&nbsp;</p>
+                <p>
+                  <strong>
+                    <em>Or visit the
+                      <a href="https://www.jacquemus.com/en_fr/contact-us">Customer section.</a>
+                    </em>
+                  </strong>
+                </p>
+              </div>
+            </div>
+          </div>
+          <span class="productDetail__detailsPanel__close" id="detailsPanelClose"></span>
+        </div>
+      </div>
+    </div>
+    <div class="productDetail__visualsMobile u-hidden-desktop">
+      <div class="productDetail__visuals__wrapper" id="imagesWrapper">
+        <img class="productDetail__visuals__content productDetail__visuals__trigger -first" src="./Le Cuscinu_files/22H226BA035-1320-990_1_main.jpg" alt="LE CUSCINU" title="LE CUSCINU" data-index="0" itemprop="image" style="visibility: visible;">
+        <img class="productDetail__visuals__content productDetail__visuals__trigger " src="./Le Cuscinu_files/22H226BA035-1320-990_2.jpg" alt="LE CUSCINU" title="LE CUSCINU" data-index="1" itemprop="image" style="visibility: visible;">
+        <img class="productDetail__visuals__content productDetail__visuals__trigger " src="./Le Cuscinu_files/22H226BA035-1320-990_3.jpg" alt="LE CUSCINU" title="LE CUSCINU" data-index="2" itemprop="image" style="visibility: visible;">
+        <img class="productDetail__visuals__content productDetail__visuals__trigger " src="./Le Cuscinu_files/22H226BA035-1320-990_10.jpg" alt="LE CUSCINU" title="LE CUSCINU" data-index="3" itemprop="image" style="visibility: visible;">
+        <div class="productDetail__visuals__listWrapper">
+          <ul class="productDetail__visuals__list" id="visualsList">
+            <li class="productDetail__visuals__node" data-value="0"></li>
+            <li class="productDetail__visuals__node" data-value="1"></li>
+            <li class="productDetail__visuals__node" data-value="2"></li>
+            <li class="productDetail__visuals__node" data-value="3"></li>
+          </ul>
+        </div>
+        <div class="productDetail__visuals__wishlistWrapper">
+          <div id="wishlistComponent" class="productDetail__visuals__wishlist" data-url="/on/demandware.store/Sites-Jacquemus-Site/en_FR/WishList-Update">
+            <button id="addToWishlist" class="productDetail__visuals__wishlistCTA" data-action="add" data-pid="226BA035-1320-990"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="productDetail__showSizeLaterPanel" id="showSizeLaterPanel">
+      <div class="productDetail__showSizeLaterPanel__wrapper">
+        <h3 class="productDetail__showSizeLaterPanel__title">Join the waitlist</h3>
+        <p class="productDetail__showSizeLaterPanel__body">To be notified when a
+          <span class="color-dark">size
+            <span id="sizeLater"></span>
+          </span>
+          becomes available, please enter your email below.</p>
+        <form class="productDetail__sizesLaterForm" id="sizeLaterForm" action="https://www.jacquemus.com/on/demandware.store/Sites-Jacquemus-Site/en_FR/Waitlist-Add" data-product-name="Le Cuscinu" data-pid="226BA035-1320-990" data-image-url="https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dwc5de4d7f/22H226BA035-1320-990_1_main.jpg?sw=881&amp;sh=1100&amp;q=100">
+          <div class="productDetail__sizesLaterForm__label">
+            <label for="sizeLaterInput" id="sizeLaterLabel">
+              Email
+            </label>
+            <label for="sizeLaterInput" class="u-d-none" id="sizeLaterError">
+              Must be a valid email
+            </label>
+          </div>
+          <div class="productDetail__sizesLaterForm__input">
+            <input aria-label="Email" type="email" placeholder="Email" id="sizeLaterInput" autocomplete="email">
+          </div>
+          <button class="productDetail__sizesLaterForm__send" id="sizeLaterSend">
+            Register
+          </button>
+          <input type="hidden" name="csrf_token" value="9o6PfMvcG1zz66_3_IVLIqA4Z_nk_Qi6KKIL4iV_QFSJq7eoIrY-sBkeSHMcnwrq5HaHp3gm_yVuIyx7xVE1Pqs0xQonNkAer2xxFZ1ie4S6ROJzFTFB0lCKhk7xPWsCraQ4jvwVqZ8Q36yEshGydEyDo9-D1zCS09zs5Wf-wxkyJyMsLeU=">
+        </form>
+      </div>
+      <span class="productDetail__showSizeLaterPanel__close" id="showSizeLaterPanelClose"></span>
+    </div>
+    <div class="productDetail__sizeGuidePanel u-d-none" id="sizeGuidePanel">
+      <h3 class="productDetail__sizeGuidePanel__title u-hidden-mobile">Size guide</h3>
+      <div class="productDetail__sizeGuidePanel__wrapper">
+        <div class="sizeGuide">
+          <div class="sizeGuide__top u-hidden-mobile" id="sizeGuideTop">
+            <button class="sizeGuide__button -active" data-value="1">Women's Clothing</button>
+            <button class="sizeGuide__button" data-value="2">Women's shoes</button>
+            <button class="sizeGuide__button" data-value="3">Body measurements</button>
+          </div>
+          <div class="sizeGuide__selectWrapper">
+            <div class="sizeGuide__selectWrapper__inner">
+              <span id="sizeGuideInnerText">Women's Clothing</span>
+            </div>
+            <select id="select_size_panel" name="size_panel">
+              <option value="1">Women's Clothing</option>
+              <option value="2">Women's shoes</option>
+              <option value="3">Body measurements</option>
+            </select>
+          </div>
+          <div class="sizeGuide__wrapper" id="sizeGuideWrapper" style="height: 537px;">
+            <table class="sizeGuide__table1 -showFromBottom">
+              <tbody>
+                <tr>
+                  <td>Jacquemus</td>
+                  <td>XXS/32</td>
+                  <td>XS/34</td>
+                  <td>S/36</td>
+                  <td>M/38</td>
+                  <td>L/40</td>
+                  <td>XL/42</td>
+                  <td>XXL/44</td>
+                  <td>XXXL/46</td>
+                </tr>
+                <tr>
+                  <td>Denim size</td>
+                  <td>23</td>
+                  <td>24-25</td>
+                  <td>26-27</td>
+                  <td>28-29</td>
+                  <td>30-31</td>
+                  <td>32-33</td>
+                  <td>34</td>
+                  <td>36</td>
+                </tr>
+                <tr>
+                  <td>UK</td>
+                  <td>4</td>
+                  <td>6</td>
+                  <td>8</td>
+                  <td>10</td>
+                  <td>12</td>
+                  <td>14</td>
+                  <td>16</td>
+                  <td>18</td>
+                </tr>
+                <tr>
+                  <td>US</td>
+                  <td>0</td>
+                  <td>2</td>
+                  <td>4</td>
+                  <td>6</td>
+                  <td>8&nbsp;</td>
+                  <td>10</td>
+                  <td>12</td>
+                  <td>14</td>
+                </tr>
+                <tr>
+                  <td>France</td>
+                  <td>32</td>
+                  <td>34</td>
+                  <td>36</td>
+                  <td>38</td>
+                  <td>40</td>
+                  <td>42</td>
+                  <td>44</td>
+                  <td>46</td>
+                </tr>
+                <tr>
+                  <td>Italy</td>
+                  <td>36</td>
+                  <td>38</td>
+                  <td>40</td>
+                  <td>42</td>
+                  <td>44</td>
+                  <td>46</td>
+                  <td>48</td>
+                  <td>50</td>
+                </tr>
+                <tr>
+                  <td>Japan</td>
+                  <td>1</td>
+                  <td>3</td>
+                  <td>5</td>
+                  <td>7</td>
+                  <td>9</td>
+                  <td>11</td>
+                  <td>13</td>
+                  <td>15</td>
+                </tr>
+                <tr>
+                  <td>Korea</td>
+                  <td>33</td>
+                  <td>44</td>
+                  <td>55</td>
+                  <td>66</td>
+                  <td>77</td>
+                  <td>88</td>
+                  <td>99</td>
+                  <td>110</td>
+                </tr>
+                <tr>
+                  <td>China (Tops)</td>
+                  <td>155/76A</td>
+                  <td>160/76A</td>
+                  <td>165/80A</td>
+                  <td>170/84A</td>
+                  <td>175/88A</td>
+                  <td>175/92A</td>
+                  <td>175/96A</td>
+                  <td>180/100A</td>
+                </tr>
+                <tr>
+                  <td>China (bottoms)</td>
+                  <td>155/60A</td>
+                  <td>160/60A</td>
+                  <td>165/64A</td>
+                  <td>170/68A</td>
+                  <td>175/72A</td>
+                  <td>175/76A</td>
+                  <td>175/80A</td>
+                  <td>180/84A</td>
+                </tr>
+              </tbody>
+            </table>
+            <table class="sizeGuide__table2">
+              <tbody>
+                <tr>
+                  <td>UE</td>
+                  <td>35</td>
+                  <td>36</td>
+                  <td>37</td>
+                  <td>38</td>
+                  <td>39</td>
+                  <td>40</td>
+                  <td>41</td>
+                </tr>
+                <tr>
+                  <td>UK</td>
+                  <td>2</td>
+                  <td>3</td>
+                  <td>4</td>
+                  <td>5</td>
+                  <td>6</td>
+                  <td>7</td>
+                  <td>8</td>
+                </tr>
+                <tr>
+                  <td>US</td>
+                  <td>4</td>
+                  <td>5</td>
+                  <td>6</td>
+                  <td>7</td>
+                  <td>8</td>
+                  <td>9</td>
+                  <td>10</td>
+                </tr>
+                <tr>
+                  <td>Japan</td>
+                  <td>22</td>
+                  <td>23</td>
+                  <td>24</td>
+                  <td>25</td>
+                  <td>26</td>
+                  <td>27</td>
+                  <td>28</td>
+                </tr>
+                <tr>
+                  <td>China</td>
+                  <td>35</td>
+                  <td>36</td>
+                  <td>37</td>
+                  <td>38</td>
+                  <td>39</td>
+                  <td>40</td>
+                  <td>41</td>
+                </tr>
+              </tbody>
+            </table>
+            <table class="sizeGuide__table3">
+              <tbody>
+                <tr>
+                  <td>Size</td>
+                  <td>32</td>
+                  <td>34</td>
+                  <td>36</td>
+                  <td>38</td>
+                  <td>40</td>
+                  <td>42</td>
+                  <td>44</td>
+                  <td>46</td>
+                </tr>
+                <tr>
+                  <td>Chest size</td>
+                  <td>76</td>
+                  <td>80</td>
+                  <td>84</td>
+                  <td>88</td>
+                  <td>92</td>
+                  <td>96</td>
+                  <td>100</td>
+                  <td>104</td>
+                </tr>
+                <tr>
+                  <td>Waist size</td>
+                  <td>58</td>
+                  <td>62</td>
+                  <td>66</td>
+                  <td>70</td>
+                  <td>74</td>
+                  <td>78</td>
+                  <td>82</td>
+                  <td>86</td>
+                </tr>
+                <tr>
+                  <td>Pelvis size</td>
+                  <td>83</td>
+                  <td>87</td>
+                  <td>91</td>
+                  <td>95</td>
+                  <td>99</td>
+                  <td>103</td>
+                  <td>107</td>
+                  <td>111</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="sizeGuide">
+          <div class="sizeGuide__top u-hidden-mobile" id="sizeGuideTop">
+            <button class="sizeGuide__button" data-value="1">Men's Clothing</button>
+            <button class="sizeGuide__button" data-value="2">Men's shoes</button>
+            <button class="sizeGuide__button" data-value="3">Body measurements</button>
+          </div>
+          <div class="sizeGuide__selectWrapper">
+            <div class="sizeGuide__selectWrapper__inner">
+              <span id="sizeGuideInnerText"></span>
+            </div>
+            <select id="select_size_panel" name="size_panel">
+              <option value="1">Men's Clothing</option>
+              <option value="2">Men's shoes</option>
+              <option value="3">Body measurements</option>
+            </select>
+          </div>
+          <div class="sizeGuide__wrapper" id="sizeGuideWrapper">
+            <table class="sizeGuide__table1">
+              <tbody>
+                <tr>
+                  <td>Jacquemus (Italian size)</td>
+                  <td>44</td>
+                  <td>46</td>
+                  <td>48</td>
+                  <td>50</td>
+                  <td>52</td>
+                  <td>54</td>
+                </tr>
+                <tr>
+                  <td>Jacquemus (Denim size)</td>
+                  <td>28</td>
+                  <td>29-30</td>
+                  <td>31</td>
+                  <td>32-33</td>
+                  <td>34</td>
+                  <td>35</td>
+                </tr>
+                <tr>
+                  <td>International</td>
+                  <td>XS</td>
+                  <td>S</td>
+                  <td>M</td>
+                  <td>L</td>
+                  <td>XL</td>
+                  <td>XXL</td>
+                </tr>
+                <tr>
+                  <td>Europe</td>
+                  <td>44</td>
+                  <td>46</td>
+                  <td>48</td>
+                  <td>50</td>
+                  <td>52</td>
+                  <td>54</td>
+                </tr>
+                <tr>
+                  <td>Japan</td>
+                  <td>S /&nbsp; 36</td>
+                  <td>S / 38</td>
+                  <td>M / 40</td>
+                  <td>M / 42</td>
+                  <td>L / 44</td>
+                  <td>L / 46</td>
+                </tr>
+                <tr>
+                  <td>US</td>
+                  <td>34</td>
+                  <td>36</td>
+                  <td>38</td>
+                  <td>40</td>
+                  <td>42</td>
+                  <td>44</td>
+                </tr>
+                <tr>
+                  <td>Korea</td>
+                  <td>90</td>
+                  <td>95</td>
+                  <td>100</td>
+                  <td>105</td>
+                  <td>110</td>
+                  <td>115</td>
+                </tr>
+              </tbody>
+            </table>
+            <table class="sizeGuide__table2">
+              <tbody>
+                <tr>
+                  <td>UE</td>
+                  <td>39</td>
+                  <td>40</td>
+                  <td>41</td>
+                  <td>42</td>
+                  <td>43</td>
+                  <td>44</td>
+                  <td>45</td>
+                  <td>46</td>
+                </tr>
+                <tr>
+                  <td>UK</td>
+                  <td>5,5</td>
+                  <td>6,5</td>
+                  <td>7,5</td>
+                  <td>8</td>
+                  <td>9</td>
+                  <td>9,5</td>
+                  <td>10,5</td>
+                  <td>11</td>
+                </tr>
+                <tr>
+                  <td>US</td>
+                  <td>6</td>
+                  <td>7</td>
+                  <td>8</td>
+                  <td>8,5</td>
+                  <td>9</td>
+                  <td>9,5</td>
+                  <td>10</td>
+                  <td>11</td>
+                </tr>
+                <tr>
+                  <td>Japan</td>
+                  <td>24,5</td>
+                  <td>25</td>
+                  <td>25,5</td>
+                  <td>26</td>
+                  <td>27</td>
+                  <td>28</td>
+                  <td>29</td>
+                  <td>30</td>
+                </tr>
+                <tr>
+                  <td>China</td>
+                  <td>39</td>
+                  <td>40</td>
+                  <td>41</td>
+                  <td>42</td>
+                  <td>43</td>
+                  <td>44</td>
+                  <td>45</td>
+                  <td>46</td>
+                </tr>
+              </tbody>
+            </table>
+            <table class="sizeGuide__table3">
+              <tbody>
+                <tr>
+                  <td>Size</td>
+                  <td>44</td>
+                  <td>46</td>
+                  <td>48</td>
+                  <td>50</td>
+                  <td>52</td>
+                  <td>54</td>
+                  <td>56</td>
+                </tr>
+                <tr>
+                  <td>Chest size</td>
+                  <td>88</td>
+                  <td>92</td>
+                  <td>96</td>
+                  <td>100</td>
+                  <td>104</td>
+                  <td>108</td>
+                  <td>112</td>
+                </tr>
+                <tr>
+                  <td>Waist size</td>
+                  <td>76</td>
+                  <td>80</td>
+                  <td>84</td>
+                  <td>88</td>
+                  <td>92</td>
+                  <td>96</td>
+                  <td>100</td>
+                </tr>
+                <tr>
+                  <td>Pelvis size</td>
+                  <td>92</td>
+                  <td>96</td>
+                  <td>100</td>
+                  <td>104</td>
+                  <td>108</td>
+                  <td>112</td>
+                  <td>116</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <p class="productDetail__sizeGuidePanel__body">Size, fit and measurements may vary from one style to another, which
+          means there might be slight differences in items fit.</p>
+      </div>
+      <span class="productDetail__sizeGuidePanel__close" id="sizeGuidePanelClose"></span>
+    </div>
+  </div>
+  <div class="productDetail__addToCartMobile u-hidden-desktop">
+    <div class="productDetail__addToCartMobile__error" id="addedToCartMobile">
+      <span id="addedToCartMessageMobile"></span>
+    </div>
+    <div class="productDetail__addToCartMobile__wrapper">
+      <div class="productDetail__addToCartMobile__top">
+        <p class="productDetail__addToCartMobile__title">Le Cuscinu</p>
+        <div class="productDetail__addToCartMobile__price" id="productPriceMobile">
+
+
+
+          <div class="product__price">
+
+
+
+            <span>
+
+
+              <span class="product__price__value">
+                765 EUR
+
+
+              </span>
+
+            </span>
+          </div>
+
+
+        </div>
+      </div>
+      <button class="productDetail__addToCartMobile__showSizes" id="showSizeMobile" data-gtmdata="{&quot;id&quot;:&quot;226BA035-1320-990&quot;,&quot;name&quot;:&quot;Le Cuscinu&quot;,&quot;category&quot;:&quot;Bags&quot;,&quot;categoryID&quot;:&quot;Bags/women&quot;,&quot;price&quot;:&quot;765.00&quot;}" data-gtmga4data="{&quot;item_id&quot;:&quot;226BA035&quot;,&quot;item_name&quot;:&quot;LE CUSCINU&quot;,&quot;item_variant&quot;:&quot;226BA035-1320-990&quot;,&quot;item_category&quot;:&quot;Bags&quot;,&quot;price&quot;:&quot;765.00&quot;,&quot;currencyCode&quot;:&quot;EUR&quot;}" data-pid="3700943157546">
+        <span class="productDetail__addToCartMobile__showSizeInsideMobile -hidden" id="showOneSizeMobile">
+          Waitlist
+        </span>
+        <span class="productDetail__addToCartMobile__showSizeInsideMobile" id="showSizesMobile">
+          Add
+        </span>
+      </button>
+
+    </div>
+  </div>
+  <div class="productDetail__inspirationalBlock"></div>
+</div>
+
+<div class="productDetail__visuals__zoomSlider" id="zoomSlider">
+  <div class="productDetail__visuals__zoomSlider__logo">
+    <a href="https://www.jacquemus.com/en_fr">
+      <svg width="138" height="28" fill="#2E2E2E" viewBox="0 0 138 28" xmlns="http://www.w3.org/2000/svg"
+        class="logo-svg">
+        <title>JACQUEMUS</title>
+        <path
+          d="M30 12V7.6c.1-2.7 1.2-4.9 3.7-6a6.3 6.3 0 018.9 4.7l.2 2c0 .1 0 .2-.2.2h-4c-.1 0-.2-.1-.2-.3 0-.7-.1-1.3-.5-2-.8-1.1-2.6-1-3.2.4-.3.5-.4 1-.4 1.6v11.6c0 .4 0 .8.2 1.2.4 1 1 1.4 2 1.4.8 0 1.4-.5 1.7-1.5.2-.4.2-.8.2-1.2 0-.2 0-.3.3-.3H42.6c.1 0 .2 0 .2.2 0 1.8-.4 3.4-1.5 4.9a5.8 5.8 0 01-4.2 2.3c-1.7.2-3.3-.1-4.7-1.3-1.3-1-2-2.5-2.3-4.1A141.3 141.3 0 0030 12zm97.2 7.4h1.9c.2 0 .3 0 .3.3 0 .6 0 1.1.3 1.6.3.8.9 1.3 1.8 1.3.8 0 1.5-.3 1.9-1.2.6-1.3.5-2.7-.2-4-.5-.9-1.3-1.2-2.1-1.4h-.1c-1-.3-2-.6-2.8-1.1a6.6 6.6 0 01-3-5c-.3-1.7-.2-3.4.5-5 .9-2.3 2.6-3.6 5-3.8 1.5-.2 2.9 0 4.2.9 1.6 1 2.5 2.7 2.8 4.7l.2 1.5c0 .2 0 .3-.3.3h-3.8c-.2 0-.3 0-.3-.3 0-.5 0-1-.2-1.4-.3-1-1-1.5-1.8-1.5a2 2 0 00-2 1.4c-.2.8-.2 1.6 0 2.4.1 1 .7 1.6 1.6 2l1.3.5.6.2c2.9 1 4.5 3 4.9 6 .2 2 .1 3.8-.7 5.5-1 2-2.5 3.2-4.7 3.5-1.9.3-3.6-.1-5.2-1.4a6.9 6.9 0 01-2.1-4.1l-.2-1.6c0-.2.1-.3.3-.3h1.9zm-4.5-5.9V9.2 1.7c0-.3 0-.3-.3-.3h-3.7c-.3 0-.4 0-.4.4V19.5c0 .5 0 1.1-.3 1.6-.3.8-.8 1.3-1.6 1.3-.9 0-1.5-.3-1.9-1.2-.3-.5-.3-1.1-.3-1.7v-5.1V1.7c0-.3 0-.3-.4-.3h-3.6c-.3 0-.4 0-.4.4a7865.5 7865.5 0 01.2 19.5c.3 1.8 1 3.3 2.5 4.4a6 6 0 004 1.2c2-.1 3.5-.8 4.7-2.4a7.9 7.9 0 001.5-4.9v-6zM61 8.7v-7c0-.3 0-.3.4-.3H65c.3 0 .4 0 .4.4v17.7c0 .8 0 1.5.5 2a1.9 1.9 0 003.2-.1 4 4 0 00.4-1.9V1.8v-.1-.3h4.1c.2 0 .3 0 .3.3v17.7c0 1.7-.3 3.4-1.3 4.8a5.9 5.9 0 01-4.8 2.7 6 6 0 01-4-1.1 6.8 6.8 0 01-2.7-4.6 11 11 0 01-.1-2v-5.5-2.8-2.2zm41.5 4.8l-.5 1.6a9957.6 9957.6 0 01-3.2 11.2c0 .1 0 .2-.2.2s-.2 0-.2-.2l-3.7-12.5-.2-.9-.1-.2v13.5c0 .2 0 .3-.4.3h-3.4c-.2 0-.3 0-.3-.3V1.7c0-.2.1-.3.4-.3h3.5c.3 0 .4 0 .5.3l2.7 9.6 1.2 4 .1-.3 3.9-13.3c0-.2.1-.3.4-.3h3.5c.3 0 .3 0 .3.3v24.5c0 .3 0 .3-.3.3h-3.4c-.3 0-.3 0-.3-.3V16 12.7l-.3.7zm-25.6-2.2v14.9c0 .2 0 .3.3.3h10.3c.2 0 .2 0 .2-.3v-3.6c0-.3 0-.3-.3-.3h-5.8c-.3 0-.4 0-.4-.3v-5.8c0-.3.1-.4.4-.4H86.4c.2 0 .3 0 .3-.3V12c0-.3-.1-.3-.4-.3h-4.7c-.3 0-.4 0-.4-.4V6c0-.3.1-.4.4-.4a489.4 489.4 0 005.7 0c.3 0 .4 0 .4-.3V1.8c0-.3 0-.4-.4-.4h-10c-.3 0-.4 0-.4.4v9.5zm-64 2.4v-4-8c0-.2 0-.3-.4-.3H9c-.3 0-.4 0-.4.4v17.8a4 4 0 01-.4 1.9c-.6 1.1-2 1.3-2.9.3-.4-.5-.6-1-.8-1.7 0-.2 0-.3-.2-.3a304.3 304.3 0 01-4.2.3 17.3 17.3 0 01.1 1c.7 3.3 3.3 6 7 5.8 1.5-.1 2.9-.7 4-2a7.6 7.6 0 001.8-5.1v-6.1zM58 8.5c0-.7 0-1.5-.2-2.2-.4-2-1.3-3.6-3.1-4.5a6.6 6.6 0 00-4-.7c-1.7.2-3.2 1-4.3 2.4a8.2 8.2 0 00-1.4 4.9V19l.1 2.1c.4 2 1.2 3.7 3 4.8 1.7 1.1 3.5 1.2 5.4.7.3 0 .4 0 .6.2a12.7 12.7 0 00.8 1c0 .2.1.2.3.1a202.5 202.5 0 012.4-2l-.5-.6-.4-.6c-.1-.2-.1-.3 0-.4 1-1.4 1.3-3 1.3-4.7v-4V14v-1.8-3.6zm-4.3 11.9l-.2-.3-.4-.5a130.9 130.9 0 01-2.6 1.7c-.2.1-.2.2 0 .4a11.9 11.9 0 01.6.9c-.7-.2-1.2-.6-1.4-1.2-.3-.6-.3-1.3-.3-2A1791.1 1791.1 0 0149.7 7c.3-1 1-1.5 2-1.5s1.6.5 1.9 1.5l.2 1.3v12.1zm-26.2.9l1 5.1v.1h-4.1c-.1 0-.2 0-.2-.2a163.5 163.5 0 00-.8-3.4 465.5 465.5 0 01-4.6.2l-.3 1.9-.2 1.2c0 .2 0 .3-.3.3h-3.6c-.3 0-.3 0-.3-.3l2.5-12 .8-4.2.5-2.4 1.2-6c0-.2.2-.2.4-.2h3.8c.2 0 .3 0 .3.3l3 14.9v.4l1 4.3zm-4.8-2.7c.2 0 .2 0 .2-.2l-.1-.5v-.3l-.7-4a10518.8 10518.8 0 01-.9-3.8l-.7 4a1335.7 1335.7 0 01-.7 4.8h3z">
+        </path>
+      </svg>
+    </a>
+  </div>
+  <div class="productDetail__visuals__zoomSliderWrapper" id="zoomSliderWrapper" data-zoomposition="">
+  </div>
+  <div class="productDetail__visuals__zoomSliderButtons">
+    <button class="productDetail__visuals__zoomSliderPrev -disabled" id="zoomSliderPrev"></button>
+    <button class="productDetail__visuals__zoomSliderNext -disabled" id="zoomSliderNext"></button>
+  </div>
+  <ul class="productDetail__visuals__zoomSliderDotsWrapper" id="zoomSliderDotsWrapper"></ul>
+  <button class="productDetail__visuals__zoomSliderClose" id="zoomSliderClose"></button>
+</div>

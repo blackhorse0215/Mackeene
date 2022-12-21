@@ -1,0 +1,227 @@
+.product__tile {
+  position: relative;
+  height: 100%
+}
+
+.product__tile__link {
+  display: block;
+  height: auto;
+  position: relative
+}
+
+@media screen and (min-width: 1024px) {
+  .product__tile__link {
+    height: 100%
+  }
+}
+
+.product__tile__link::before {
+  content: '';
+  display: block;
+  padding-top: 133.33333333333331%
+}
+
+.product__tile__link video, .product__tile__link img {
+  display: block;
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover
+}
+
+.product__tile__flag {
+  position: absolute;
+  top: 0.5rem;
+  left: 1rem;
+  font-size: 0.8rem;
+  letter-spacing: normal;
+  text-transform: uppercase;
+  pointer-events: none;
+  z-index: 1
+}
+
+@media screen and (min-width: 1024px) {
+  .product__tile__flag {
+    top: 1.5rem;
+    left: 2rem;
+    font-size: 0.9rem
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .product__tile:hover .product__swatches, .product__tile:hover .product__body {
+    opacity: 1;
+    z-index: 1;
+    pointer-events: none
+  }
+
+  .product__tile:hover .product__swatches a, .product__tile:hover .product__body a {
+    pointer-events: all
+  }
+}
+
+.product__swatches {
+  max-width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  z-index: 1;
+  position: absolute;
+  right: 0;
+  top: 0;
+  left: 0;
+  padding: 2rem;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.6s cubic-bezier(0.25, 0.1, 0.25, 1) 0s
+}
+
+.product__swatches__attributes {
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0.8rem;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-pack: end;
+  justify-content: flex-end
+}
+
+.product__swatches__attributes__value {
+  display: block;
+  box-sizing: content-box !important;
+  width: 0.6rem;
+  height: 0.6rem;
+  padding: 0.6rem
+}
+
+.product__swatches__attributes__value div {
+  width: 0;
+  height: 0
+}
+
+@media screen and (min-width: 1024px) {
+  .product__swatches__attributes__value div {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%
+  }
+}
+
+.product__swatches__attributes__value div span {
+  display: block;
+  width: 0;
+  height: 0;
+  text-indent: 99em;
+  overflow: hidden;
+  white-space: nowrap
+}
+
+.product__title {
+  font-size: 1.2rem;
+  letter-spacing: 0.04em;
+  line-height: 1.8rem
+}
+
+.product__title__content {
+  display: block;
+  color: #2e2e2e
+}
+
+@media screen and (min-width: 1024px) {
+  .product__title {
+    font-size: 1.4rem;
+    line-height: inherit
+  }
+}
+
+.product__body {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  padding: 0.6rem 1.5rem 1.2rem;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  transition: opacity 0.6s cubic-bezier(0.25, 0.1, 0.25, 1) 0s
+}
+
+@media screen and (min-width: 1024px) {
+  .product__body {
+    pointer-events: none;
+    padding: 2rem;
+    z-index: 1
+  }
+}
+
+.product__body__wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-align: baseline;
+  align-items: baseline
+}
+
+.product__price {
+  line-height: 1.4rem
+}
+
+@media screen and (min-width: 1024px) {
+  .product__price {
+    line-height: inherit
+  }
+}
+
+.product__price__value {
+  font-size: 0.8rem;
+  color: #a4a4a4;
+  letter-spacing: 0.2em;
+  line-height: 1.4rem;
+  font-weight: 500
+}
+
+@media screen and (min-width: 1024px) {
+  .product__price__value {
+    font-size: 1rem;
+    color: #2e2e2e
+  }
+}
+
+.product__price__value.-disabled {
+  text-decoration: line-through;
+  color: #a4a4a4
+}
+
+.product__price__value.-saled {
+  margin-left: 0.8rem;
+  color: #cf6666
+}
+
+.product__sizes {
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 0.4rem;
+  font-size: 1rem;
+  color: #2e2e2e
+}
+
+.product__sizes__size {
+  display: block;
+  margin-right: 0.8rem
+}
+
+.product__sizes__size.-disabled {
+  color: #a4a4a4
+}
+
+.product__notAvailable {
+  color: #a4a4a4;
+  text-transform: uppercase;
+  font-size: 0.9rem
+}

@@ -1,0 +1,1591 @@
+<footer class="footer">
+  <div class="footer__content">
+    <div class="footer__content__form">
+      <h5>Newsletter
+      </h5>
+
+      {%- form 'customer', id: 'footer-newsletter', class: 'Footer__Newsletter Form footer__content__form__container' -%}
+        {%- if form.posted_successfully? -%}
+          <p class="Form__Alert Alert Alert--success">{{ 'footer.newsletter.success' | t }}</p>
+        {%- else -%}
+          <div class="footer__content__form__label">
+            <label for="newsletterInput" id="newsletterLabel">
+              {{ 'footer.newsletter.input' | t }}
+            </label>
+
+            {%- if form.errors -%}
+              <label for="newsletterInput" class="u-d-none" id="newsletterError">{{ form.errors.messages['email'] }}</label>
+            {%- endif -%}
+          </div>
+
+          <div class="footer__content__form__input">
+            <input type="hidden" name="contact[tags]" value="newsletter">
+            <input type="email" id="newsletterInput" name="contact[email]" class="Form__Input" aria-label="{{ 'footer.newsletter.input' | t }}" placeholder="{{ 'footer.newsletter.input' | t }}" required>
+            <button type="submit" class="footer__content__form__send" id="newsletterSend"></button>
+          </div>
+        {%- endif -%}
+      {%- endform -%}
+
+      <span class="footer__content__form__hint" id="newsletterHint">
+        I’d like to sign up to the JACQUEMUS newsletter. My email won’t be shared with third parties.
+      </span>
+    </div>
+    <div class="footer__content__right">
+      <div class="footer__content__right__contact">
+        <h5>Customer Care</h5>
+        <div class="u-d-flex u-a-center">
+          <a href="https://www.jacquemus.com/en_dz/contact-us">Contact form</a>
+        </div>
+      </div>
+      <div class="footer__content__right__country">
+        <div class="countrySwitcher__footer">
+          <h6 class="countrySwitcher__footer__label">Country</h6>
+          <div class="countrySwitcher__footer__action">
+            <div class="dropdown country-selector langDropdown__wrapper" data-url="/on/demandware.store/Sites-Jacquemus-Site/en_DZ/Page-SetLocale" tabindex="0">
+              <span class="btn dropdown-toggle langDropdown__selected" data-selector="dropdownCountrySelector" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                english
+              </span>
+              <div class="dropdown-menu dropdown-country-selector" aria-labelledby="dropdownCountrySelector">
+                <a class="dropdown-item langDropdown__link" href="https://www.jacquemus.com/en_dz#" data-locale="fr_DZ" data-currencycode="USD">
+                  français
+                </a>
+                <a class="dropdown-item langDropdown__link" href="https://www.jacquemus.com/en_dz#" data-locale="en_DZ" data-currencycode="USD">
+                  english
+                </a>
+              </div>
+            </div>
+            <span class="countrySwitcher__footer__separation"></span>
+            <span data-selector="panelCountryswitcherToggle" class="countrySwitcher__footer__country">
+              <i class="countrySwitcher__flag flag-icon flag-icon-dz"></i>
+              Algeria (USD)
+            </span>
+            <span data-selector="country-panel-tmp" style="display:none;">
+              <div class="countrySwitcher__wrapperTop">
+                <div class="countrySwitcher__wrapperTop__title">
+                  <h3>Location</h3>
+                </div>
+                <div class="countrySwitcher__wrapperSearch">
+                  <input type="text" name="" value="" placeholder="Search here..." class="countrySwitcher__wrapperSearch__input" data-selector="inputSearch">
+                </div>
+              </div>
+              <div class="countrySwitcher__wrapperChoices" data-url="/on/demandware.store/Sites-Jacquemus-Site/en_DZ/Page-SetLocale" tabindex="0">
+                <div class="countrySwitcher__items" aria-labelledby="dropdownCountrySelector">
+                  <ul class="countrySwitcher__items__wrapper -nofilter" data-selector="countryList">
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_FR" data-currencycode="EUR" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-fr"></i>
+                        France (EUR)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_US" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-us"></i>
+                        United States (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_GB" data-currencycode="GBP" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-gb"></i>
+                        United Kingdom (GBP)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_AF" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-af"></i>
+                        Afghanistan (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_AX" data-currencycode="EUR" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-ax"></i>
+                        Åland Islands (EUR)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_AL" data-currencycode="EUR" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-al"></i>
+                        Albania (EUR)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link -selected" href="https://www.jacquemus.com/en_dz#" data-locale="en_DZ" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-dz"></i>
+                        Algeria (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_AS" data-currencycode="AUD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-as"></i>
+                        American Samoa (AUD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_AD" data-currencycode="EUR" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-ad"></i>
+                        Andorra (EUR)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_AO" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-ao"></i>
+                        Angola (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_AI" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-ai"></i>
+                        Anguilla (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_AQ" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-aq"></i>
+                        Antarctica (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_AG" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-ag"></i>
+                        Antigua and Barbuda (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_AR" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-ar"></i>
+                        Argentina (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_AM" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-am"></i>
+                        Armenia (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_AW" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-aw"></i>
+                        Aruba (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_AU" data-currencycode="AUD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-au"></i>
+                        Australia (AUD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_AT" data-currencycode="EUR" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-at"></i>
+                        Austria (EUR)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_AZ" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-az"></i>
+                        Azerbaijan (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_BS" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-bs"></i>
+                        Bahamas (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_BH" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-bh"></i>
+                        Bahrain (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_BD" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-bd"></i>
+                        Bangladesh (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_BB" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-bb"></i>
+                        Barbados (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_BE" data-currencycode="EUR" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-be"></i>
+                        Belgium (EUR)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_BZ" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-bz"></i>
+                        Belize (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_BJ" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-bj"></i>
+                        Benin (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_BM" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-bm"></i>
+                        Bermuda (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_BT" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-bt"></i>
+                        Bhutan (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_BO" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-bo"></i>
+                        Bolivia (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_BQ" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-bq"></i>
+                        Bonaire, Sint Eustatius, and Saba (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_BA" data-currencycode="EUR" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-ba"></i>
+                        Bosnia and Herzegovina (EUR)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_BW" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-bw"></i>
+                        Botswana (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_BV" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-bv"></i>
+                        Bouvet Island (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_BR" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-br"></i>
+                        Brazil (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_IO" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-io"></i>
+                        British Indian Ocean Territory (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_VG" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-vg"></i>
+                        British Virgin Islands (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_BN" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-bn"></i>
+                        Brunei (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_BG" data-currencycode="EUR" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-bg"></i>
+                        Bulgaria (EUR)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_BF" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-bf"></i>
+                        Burkina Faso (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_BI" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-bi"></i>
+                        Burundi (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_KH" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-kh"></i>
+                        Cambodia (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_CM" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-cm"></i>
+                        Cameroon (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_CA" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-ca"></i>
+                        Canada (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_CV" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-cv"></i>
+                        Cape Verde (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_KY" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-ky"></i>
+                        Cayman Islands (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_CF" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-cf"></i>
+                        Central African Republic (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_TD" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-td"></i>
+                        Chad (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_CL" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-cl"></i>
+                        Chile (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_CN" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-cn"></i>
+                        China (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_CX" data-currencycode="AUD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-cx"></i>
+                        Christmas Island (AUD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_CC" data-currencycode="AUD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-cc"></i>
+                        Cocos [Keeling] Islands (AUD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_CO" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-co"></i>
+                        Colombia (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_KM" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-km"></i>
+                        Comoros (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_CG" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-cg"></i>
+                        Congo - Brazzaville (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_CD" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-cd"></i>
+                        Congo - Kinshasa (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_CK" data-currencycode="AUD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-ck"></i>
+                        Cook Islands (AUD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_CR" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-cr"></i>
+                        Costa Rica (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_CI" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-ci"></i>
+                        Côte d’Ivoire (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_HR" data-currencycode="EUR" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-hr"></i>
+                        Croatia (EUR)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_CU" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-cu"></i>
+                        Cuba (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_CW" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-cw"></i>
+                        Curaçao (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_CY" data-currencycode="EUR" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-cy"></i>
+                        Cyprus (EUR)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_CZ" data-currencycode="EUR" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-cz"></i>
+                        Czech Republic (EUR)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_DK" data-currencycode="EUR" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-dk"></i>
+                        Denmark (EUR)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_DJ" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-dj"></i>
+                        Djibouti (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_DM" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-dm"></i>
+                        Dominica (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_DO" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-do"></i>
+                        Dominican Republic (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_EC" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-ec"></i>
+                        Ecuador (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_EG" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-eg"></i>
+                        Egypt (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_SV" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-sv"></i>
+                        El Salvador (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_GQ" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-gq"></i>
+                        Equatorial Guinea (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_ER" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-er"></i>
+                        Eritrea (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_EE" data-currencycode="EUR" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-ee"></i>
+                        Estonia (EUR)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_ET" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-et"></i>
+                        Ethiopia (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_FK" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-fk"></i>
+                        Falkland Islands (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_FO" data-currencycode="EUR" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-fo"></i>
+                        Faroe Islands (EUR)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_FJ" data-currencycode="AUD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-fj"></i>
+                        Fiji (AUD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_FI" data-currencycode="EUR" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-fi"></i>
+                        Finland (EUR)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_GF" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-gf"></i>
+                        French Guiana (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_PF" data-currencycode="AUD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-pf"></i>
+                        French Polynesia (AUD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_TF" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-tf"></i>
+                        French Southern Territories (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_GA" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-ga"></i>
+                        Gabon (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_GM" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-gm"></i>
+                        Gambia (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_GE" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-ge"></i>
+                        Georgia (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_DE" data-currencycode="EUR" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-de"></i>
+                        Germany (EUR)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_GH" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-gh"></i>
+                        Ghana (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_GI" data-currencycode="EUR" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-gi"></i>
+                        Gibraltar (EUR)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_GR" data-currencycode="EUR" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-gr"></i>
+                        Greece (EUR)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_GL" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-gl"></i>
+                        Greenland (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_GD" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-gd"></i>
+                        Grenada (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_GP" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-gp"></i>
+                        Guadeloupe (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_GU" data-currencycode="AUD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-gu"></i>
+                        Guam (AUD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_GT" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-gt"></i>
+                        Guatemala (USD)
+                      </a>
+                    </li>
+
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_GG" data-currencycode="GBP" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-gg"></i>
+                        Guernsey (GBP)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_GN" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-gn"></i>
+                        Guinea (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_GW" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-gw"></i>
+                        Guinea-Bissau (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_GY" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-gy"></i>
+                        Guyana (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_HT" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-ht"></i>
+                        Haiti (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_HM" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-hm"></i>
+                        Heard Island and McDonald Islands (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_HN" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-hn"></i>
+                        Honduras (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_HK" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-hk"></i>
+                        Hong Kong SAR China (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_HU" data-currencycode="EUR" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-hu"></i>
+                        Hungary (EUR)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_IS" data-currencycode="EUR" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-is"></i>
+                        Iceland (EUR)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_IN" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-in"></i>
+                        India (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_ID" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-id"></i>
+                        Indonesia (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_IR" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-ir"></i>
+                        Iran (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_IQ" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-iq"></i>
+                        Iraq (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_IE" data-currencycode="EUR" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-ie"></i>
+                        Ireland (EUR)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_IM" data-currencycode="GBP" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-im"></i>
+                        Isle of Man (GBP)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_IL" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-il"></i>
+                        Israel (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_IT" data-currencycode="EUR" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-it"></i>
+                        Italy (EUR)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_JM" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-jm"></i>
+                        Jamaica (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_JP" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-jp"></i>
+                        Japan (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_JE" data-currencycode="GBP" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-je"></i>
+                        Jersey (GBP)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_JO" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-jo"></i>
+                        Jordan (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_KZ" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-kz"></i>
+                        Kazakhstan (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_KE" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-ke"></i>
+                        Kenya (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_KI" data-currencycode="AUD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-ki"></i>
+                        Kiribati (AUD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_KW" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-kw"></i>
+                        Kuwait (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_KG" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-kg"></i>
+                        Kyrgyzstan (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_LA" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-la"></i>
+                        Laos (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_LV" data-currencycode="EUR" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-lv"></i>
+                        Latvia (EUR)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_LB" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-lb"></i>
+                        Lebanon (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_LS" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-ls"></i>
+                        Lesotho (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_LR" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-lr"></i>
+                        Liberia (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_LY" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-ly"></i>
+                        Libya (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_LI" data-currencycode="EUR" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-li"></i>
+                        Liechtenstein (EUR)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_LT" data-currencycode="EUR" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-lt"></i>
+                        Lithuania (EUR)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_LU" data-currencycode="EUR" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-lu"></i>
+                        Luxembourg (EUR)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_MO" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-mo"></i>
+                        Macau SAR China (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_MK" data-currencycode="EUR" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-mk"></i>
+                        Macedonia (EUR)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_MG" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-mg"></i>
+                        Madagascar (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_MW" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-mw"></i>
+                        Malawi (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_MY" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-my"></i>
+                        Malaysia (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_MV" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-mv"></i>
+                        Maldives (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_ML" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-ml"></i>
+                        Mali (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_MT" data-currencycode="EUR" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-mt"></i>
+                        Malta (EUR)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_MH" data-currencycode="AUD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-mh"></i>
+                        Marshall Islands (AUD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_MQ" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-mq"></i>
+                        Martinique (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_MR" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-mr"></i>
+                        Mauritania (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_MU" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-mu"></i>
+                        Mauritius (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_YT" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-yt"></i>
+                        Mayotte (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_MX" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-mx"></i>
+                        Mexico (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_FM" data-currencycode="AUD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-fm"></i>
+                        Micronesia (AUD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_MD" data-currencycode="EUR" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-md"></i>
+                        Moldova (EUR)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_MC" data-currencycode="EUR" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-mc"></i>
+                        Monaco (EUR)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_MN" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-mn"></i>
+                        Mongolia (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_ME" data-currencycode="EUR" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-me"></i>
+                        Montenegro (EUR)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_MS" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-ms"></i>
+                        Montserrat (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_MA" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-ma"></i>
+                        Morocco (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_MZ" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-mz"></i>
+                        Mozambique (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_MM" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-mm"></i>
+                        Myanmar [Burma] (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_NA" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-na"></i>
+                        Namibia (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_NR" data-currencycode="AUD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-nr"></i>
+                        Nauru (AUD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_NP" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-np"></i>
+                        Nepal (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_NL" data-currencycode="EUR" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-nl"></i>
+                        Netherlands (EUR)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_NC" data-currencycode="AUD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-nc"></i>
+                        New Caledonia (AUD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_NZ" data-currencycode="AUD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-nz"></i>
+                        New Zealand (AUD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_NI" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-ni"></i>
+                        Nicaragua (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_NE" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-ne"></i>
+                        Niger (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_NG" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-ng"></i>
+                        Nigeria (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_NU" data-currencycode="AUD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-nu"></i>
+                        Niue (AUD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_NF" data-currencycode="AUD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-nf"></i>
+                        Norfolk Island (AUD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_MP" data-currencycode="AUD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-mp"></i>
+                        Northern Mariana Islands (AUD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_KP" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-kp"></i>
+                        North Korea (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_NO" data-currencycode="EUR" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-no"></i>
+                        Norway (EUR)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_OM" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-om"></i>
+                        Oman (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_PK" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-pk"></i>
+                        Pakistan (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_PW" data-currencycode="AUD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-pw"></i>
+                        Palau (AUD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_PS" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-ps"></i>
+                        Palestinian Territories (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_PA" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-pa"></i>
+                        Panama (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_PG" data-currencycode="AUD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-pg"></i>
+                        Papua New Guinea (AUD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_PY" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-py"></i>
+                        Paraguay (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_PE" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-pe"></i>
+                        Peru (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_PH" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-ph"></i>
+                        Philippines (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_PN" data-currencycode="AUD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-pn"></i>
+                        Pitcairn Islands (AUD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_PL" data-currencycode="EUR" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-pl"></i>
+                        Poland (EUR)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_PT" data-currencycode="EUR" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-pt"></i>
+                        Portugal (EUR)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_QA" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-qa"></i>
+                        Qatar (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_RE" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-re"></i>
+                        Réunion (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_RO" data-currencycode="EUR" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-ro"></i>
+                        Romania (EUR)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_RW" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-rw"></i>
+                        Rwanda (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_BL" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-bl"></i>
+                        Saint Barthélemy (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_SH" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-sh"></i>
+                        Saint Helena (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_KN" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-kn"></i>
+                        Saint Kitts and Nevis (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_LC" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-lc"></i>
+                        Saint Lucia (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_MF" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-mf"></i>
+                        Saint Martin (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_PM" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-pm"></i>
+                        Saint Pierre and Miquelon (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_VC" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-vc"></i>
+                        Saint Vincent and the Grenadines (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_WS" data-currencycode="AUD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-ws"></i>
+                        Samoa (AUD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_SM" data-currencycode="EUR" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-sm"></i>
+                        San Marino (EUR)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_ST" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-st"></i>
+                        São Tomé and Príncipe (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_SA" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-sa"></i>
+                        Saudi Arabia (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_SN" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-sn"></i>
+                        Senegal (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_RS" data-currencycode="EUR" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-rs"></i>
+                        Serbia (EUR)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_SC" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-sc"></i>
+                        Seychelles (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_SL" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-sl"></i>
+                        Sierra Leone (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_SG" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-sg"></i>
+                        Singapore (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_SX" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-sx"></i>
+                        Sint Maarten (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_SK" data-currencycode="EUR" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-sk"></i>
+                        Slovakia (EUR)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_SI" data-currencycode="EUR" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-si"></i>
+                        Slovenia (EUR)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_SB" data-currencycode="AUD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-sb"></i>
+                        Solomon Islands (AUD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_SO" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-so"></i>
+                        Somalia (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_ZA" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-za"></i>
+                        South Africa (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_GS" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-gs"></i>
+                        South Georgia and the South Sandwich Islands (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_KR" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-kr"></i>
+                        South Korea (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_ES" data-currencycode="EUR" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-es"></i>
+                        Spain (EUR)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_LK" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-lk"></i>
+                        Sri Lanka (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_SD" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-sd"></i>
+                        Sudan (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_SR" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-sr"></i>
+                        Suriname (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_SJ" data-currencycode="EUR" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-sj"></i>
+                        Svalbard and Jan Mayen (EUR)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_SZ" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-sz"></i>
+                        Swaziland (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_SE" data-currencycode="EUR" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-se"></i>
+                        Sweden (EUR)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_CH" data-currencycode="EUR" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-ch"></i>
+                        Switzerland (EUR)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_SY" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-sy"></i>
+                        Syria (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_TW" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-tw"></i>
+                        Taiwan (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_TJ" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-tj"></i>
+                        Tajikistan (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_TZ" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-tz"></i>
+                        Tanzania (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_TH" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-th"></i>
+                        Thailand (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_TL" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-tl"></i>
+                        Timor-Leste (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_TG" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-tg"></i>
+                        Togo (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_TK" data-currencycode="AUD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-tk"></i>
+                        Tokelau (AUD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_TO" data-currencycode="AUD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-to"></i>
+                        Tonga (AUD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_TT" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-tt"></i>
+                        Trinidad and Tobago (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_TN" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-tn"></i>
+                        Tunisia (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_TR" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-tr"></i>
+                        Turkey (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_TM" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-tm"></i>
+                        Turkmenistan (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_TC" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-tc"></i>
+                        Turks and Caicos Islands (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_TV" data-currencycode="AUD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-tv"></i>
+                        Tuvalu (AUD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_UM" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-um"></i>
+                        U.S. Minor Outlying Islands (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_VI" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-vi"></i>
+                        U.S. Virgin Islands (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_UG" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-ug"></i>
+                        Uganda (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_AE" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-ae"></i>
+                        United Arab Emirates (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_UY" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-uy"></i>
+                        Uruguay (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_UZ" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-uz"></i>
+                        Uzbekistan (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_VU" data-currencycode="AUD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-vu"></i>
+                        Vanuatu (AUD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_VA" data-currencycode="EUR" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-va"></i>
+                        Vatican City (EUR)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_VE" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-ve"></i>
+                        Venezuela (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_VN" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-vn"></i>
+                        Vietnam (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_WF" data-currencycode="AUD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-wf"></i>
+                        Wallis and Futuna (AUD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_EH" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-eh"></i>
+                        Western Sahara (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_YE" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-ye"></i>
+                        Yemen (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_ZM" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-zm"></i>
+                        Zambia (USD)
+                      </a>
+                    </li>
+                    <li class="countrySwitcher__items__country">
+                      <a class="-link" href="https://www.jacquemus.com/en_dz#" data-locale="en_ZW" data-currencycode="USD" data-selector="countryValue">
+                        <i class="countrySwitcher__flag flag-icon flag-icon-zw"></i>
+                        Zimbabwe (USD)
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer__navigation">
+    <div class="content-asset">
+      <ul class="footer__navigation__list">
+        {%- assign linklist = linklists[section.settings.menu] -%}
+        {%- if linklist != empty -%}
+          {%- for link in linklist.links -%}
+            <li class="footer__navigation__list__element">
+              <h3>{{ link.title | escape }}</h3>
+              {%- if link.links != blank -%}
+                <ul class="footer__navigation__sublist">
+                  {%- for sub_link in link.links -%}
+                    <li>
+                      <a href="{{ sub_link.url }}">{{ sub_link.title | escape }}</a>
+                    </li>
+                  {%- endfor -%}
+                </ul>
+              {%- endif -%}
+            </li>
+          {%- endfor -%}
+        {%- endif -%}
+      </ul>
+    </div>
+  </div>
+  <div class="footer__copyright">
+    <div class="content-asset">
+      <p>© {{ shop.name }}</p>
+    </div>
+  </div>
+</footer>
+
+{% schema %}
+  {
+    "name": "Footer",
+    "class": "shopify-section--footer",
+    "settings": [
+      {
+        "type": "link_list",
+        "id": "menu",
+        "label": "Menu",
+        "info": "This menu won't show dropdown items."
+      }
+    ]
+  }
+{% endschema %}
