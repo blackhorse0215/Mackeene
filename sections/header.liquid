@@ -1,218 +1,226 @@
-<div class="header__background" id="headerBackground" style="height: 294px;"></div>
+
+<link rel="stylesheet" href="{{ 'custom.css' | asset_url }}">
+<div class="header__background" id="headerBackground"></div>
 <div class="header__banner" id="headerBanner"></div>
 <header class="header" id="header">
-  <div class="header__logo" id="headerLogo">
-    <a href="{{ routes.root_url }}">
-      <svg class="HeaderLogoImage HeaderLogoImage--primary" width="200px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 580.26 113.89" style="enable-background:new 0 0 580.26 113.89;" xml:space="preserve">
-        <g>
+  <div class="header__block-l">
+    <div class="header__logo" id="headerLogo">
+      <a href="{{ routes.root_url }}">
+        <svg class="HeaderLogoImage HeaderLogoImage--primary" width="200px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 580.26 113.89" style="enable-background:new 0 0 580.26 113.89;" xml:space="preserve">
           <g>
-            <path d="M91.47,27.07l-0.18-2.33H77.56L62.12,61L46.67,24.74H32.96l-0.18,2.33c-0.14,1.78-4.08,50.87-4.08,50.87l-0.07,0.9H41.5
-              l1.53-23.9c0.19-2.83,0.43-6.3,0.61-9.82c4.99,11.99,12.7,30.2,16,38l2.28,5.43l2.67-5.43c0.11-0.25,9.98-23.5,16-37.98
-              c0.19,3.52,0.41,6.97,0.6,9.78l1.54,23.92h12.87l-0.07-0.9C95.53,77.95,91.61,28.85,91.47,27.07z"></path>
-            <path d="M129.83,24.73l-21.8,53.03l-0.6,1.21h10.75l7.2-16.39h19.31l6.36,16.39h14.3l1.24-0.01l-22.22-54.23H129.83z
-              M141.15,53.45h-11.73c1.52-3.71,4.2-10.3,6-14.94C136.68,41.85,138.6,46.84,141.15,53.45z"></path>
-            <path d="M210.48,34.83c5.91,0,9.89,1.13,11.73,1.8l2.28,0.84l4-9.71l-0.76-0.32c-0.1-0.04-2.47-1.03-6.59-1.86
-              c-2.44-0.49-6.75-0.98-10.91-0.98c-21.15,0-35.37,11.11-35.37,27.64c0,16.26,13.14,26.77,33.48,26.77
-              c8.34,0,14.53-1.26,17.53-2.44l2.21-0.87l-3.14-9.72l-2.48,0.93c-2.99,1.12-7.75,1.81-12.41,1.81c-13.5,0-21.56-6.25-21.56-16.72
-              C188.48,41.25,196.7,34.83,210.48,34.83z"></path>
-            <polygon points="300.68,24.77 288.47,24.77 263.57,49.39 263.57,24.77 250,24.77 250,78.97 263.57,78.97 263.57,56.28
-              287.87,78.97 307.46,78.97 275.18,50.39 "></polygon>
-            <polygon points="333.19,54.84 346.06,54.84 346.06,46.85 333.19,46.85 333.2,32.98 360.58,33.02 360.58,25.02 319.67,25.02
-              319.67,79.04 361.88,79.04 361.88,70.74 333.19,70.74 "></polygon>
-            <polygon points="479.95,59.32 451.65,25.16 441.4,24.98 441.4,79.02 450.54,79.02 450.19,43.77 488.67,89.28 488.67,25.01
-              479.95,25.15 "></polygon>
-            <polygon points="522.94,70.74 522.94,54.84 535.81,54.84 535.81,46.85 522.94,46.85 522.94,32.98 550.33,33.02 550.33,25.02
-              509.42,25.02 509.42,79.04 551.63,79.04 551.63,70.74 "></polygon>
-            <polygon points="393.71,54.84 406.59,54.84 406.59,46.85 393.71,46.85 393.72,32.98 421.1,33.02 421.1,25.02 380.19,25.02
-              380.19,79.04 422.41,79.04 422.41,70.74 393.71,70.74 "></polygon>
+            <g>
+              <path d="M91.47,27.07l-0.18-2.33H77.56L62.12,61L46.67,24.74H32.96l-0.18,2.33c-0.14,1.78-4.08,50.87-4.08,50.87l-0.07,0.9H41.5
+                l1.53-23.9c0.19-2.83,0.43-6.3,0.61-9.82c4.99,11.99,12.7,30.2,16,38l2.28,5.43l2.67-5.43c0.11-0.25,9.98-23.5,16-37.98
+                c0.19,3.52,0.41,6.97,0.6,9.78l1.54,23.92h12.87l-0.07-0.9C95.53,77.95,91.61,28.85,91.47,27.07z"></path>
+              <path d="M129.83,24.73l-21.8,53.03l-0.6,1.21h10.75l7.2-16.39h19.31l6.36,16.39h14.3l1.24-0.01l-22.22-54.23H129.83z
+                M141.15,53.45h-11.73c1.52-3.71,4.2-10.3,6-14.94C136.68,41.85,138.6,46.84,141.15,53.45z"></path>
+              <path d="M210.48,34.83c5.91,0,9.89,1.13,11.73,1.8l2.28,0.84l4-9.71l-0.76-0.32c-0.1-0.04-2.47-1.03-6.59-1.86
+                c-2.44-0.49-6.75-0.98-10.91-0.98c-21.15,0-35.37,11.11-35.37,27.64c0,16.26,13.14,26.77,33.48,26.77
+                c8.34,0,14.53-1.26,17.53-2.44l2.21-0.87l-3.14-9.72l-2.48,0.93c-2.99,1.12-7.75,1.81-12.41,1.81c-13.5,0-21.56-6.25-21.56-16.72
+                C188.48,41.25,196.7,34.83,210.48,34.83z"></path>
+              <polygon points="300.68,24.77 288.47,24.77 263.57,49.39 263.57,24.77 250,24.77 250,78.97 263.57,78.97 263.57,56.28
+                287.87,78.97 307.46,78.97 275.18,50.39 "></polygon>
+              <polygon points="333.19,54.84 346.06,54.84 346.06,46.85 333.19,46.85 333.2,32.98 360.58,33.02 360.58,25.02 319.67,25.02
+                319.67,79.04 361.88,79.04 361.88,70.74 333.19,70.74 "></polygon>
+              <polygon points="479.95,59.32 451.65,25.16 441.4,24.98 441.4,79.02 450.54,79.02 450.19,43.77 488.67,89.28 488.67,25.01
+                479.95,25.15 "></polygon>
+              <polygon points="522.94,70.74 522.94,54.84 535.81,54.84 535.81,46.85 522.94,46.85 522.94,32.98 550.33,33.02 550.33,25.02
+                509.42,25.02 509.42,79.04 551.63,79.04 551.63,70.74 "></polygon>
+              <polygon points="393.71,54.84 406.59,54.84 406.59,46.85 393.71,46.85 393.72,32.98 421.1,33.02 421.1,25.02 380.19,25.02
+                380.19,79.04 422.41,79.04 422.41,70.74 393.71,70.74 "></polygon>
+            </g>
           </g>
-        </g>
-      </svg>
-    </a>
-  </div>
-  <span class="header__back" id="headerBack"></span>
-  <nav class="header__nav" id="headerNav">
-    <ul class="header__nav__menu" id="headerMenu">
-      {%- assign linklist = linklists[section.settings.main_menu] -%}
-      {%- if linklist != empty -%}
-        {%- for link in linklist.links -%}
-          <li class="header__nav__list">
-            <span id="{{ link.title | handle }}" class="header__nav__link">
-              {{ link.title | escape }}
-            </span>
-            {%- if link.links != blank -%}
-              <ul role="menu" class="header__nav__submenu" aria-hidden="true" aria-label="{{ link.title | handle }}">
-                {%- for sub_link in link.links -%}
-                  <li role="presentation" class="header__nav__sublist">
-                    <a href="{{ sub_link.url }}" class="header__nav__sublist__link">
-                      <div class="-dark">
-                        <span>{{ sub_link.title | escape }}</span>
-                        {%- comment -%} <span class="-count">116</span> {%- endcomment -%}
-                      </div>
-                      <span class="-light">
-                        {{ sub_link.title | escape }}
-                      </span>
-                    </a>
-                    {%- if sub_link.links != blank -%}
-                      <ul role="menu" class="header__nav__submenu" aria-hidden="true" aria-label="col1">
-                        {%- for sub_sub_link in sub_link.links -%}
-                          <li role="presentation" class="header__nav__sublist">
-                            <a href="{{ sub_sub_link.url }}"
-                              class="header__nav__sublist__link">
-                              <div class="-dark">
-                                <span>{{ sub_sub_link.title | escape }}</span>
-                                {%- comment -%} <span class="-count">116</span> {%- endcomment -%}
-                              </div>
-                              <span class="-light">
-                                {{ sub_sub_link.title | escape }}
-                              </span>
-                            </a>
-                          </li>
-                        {%- endfor -%}      
-                      </ul>
-                    {%- endif -%}
-                  </li>
-                {%- endfor -%}
-                <li role="presentation" class="header__nav__sublist">
-                  {%- assign downcased_link_title = link.title | downcase | strip -%}
-                  {% for block in section.blocks %}
-                    {%- assign trim_mega_menu_name = block.settings.navigation_mega_menu | downcase | strip -%}
-                    {%- if trim_mega_menu_name contains downcased_link_title -%}
-                      {%- if block.settings.push_1_image -%}
-                        <a href="{%- if block.settings.push_1_url != blank -%}{{ block.settings.push_1_url }}{%- else -%}#{%- endif -%}" class="header__nav__sublist__link">
-                          <div class="-dark">
-                            {%- capture supported_sizes -%}{%- render 'image-size', sizes: '400,600,700,800,900,1000', image: block.settings.push_1_image -%}{%- endcapture -%}
-
-                            {%- assign media_aspect_ratio = block.settings.push_1_image.aspect_ratio | default: block.settings.push_1_image.preview_image.aspect_ratio -%}
-                            <div class="AspectRatio" style="max-width: {{ block.settings.push_1_image.preview_image.width }}px; --aspect-ratio: {{ media_aspect_ratio }}">
-                              {% assign image_url = block.settings.push_1_image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' %}
-                
-                              <img class="Image--lazyLoad Image--fadeIn" data-src="{{ image_url }}" data-widths="[{{ supported_sizes }}]" data-sizes="auto" alt="{{ block.settings.push_1_image.alt | escape }}">
-                              <span class="Image__Loader"></span>
-                
-                              <noscript>
-                                <img src="{{ block.settings.push_1_image | img_url: '600x' }}" alt="{{ block.settings.push_1_image.alt | escape }}">
-                              </noscript>
-                            </div>
-                          </div>
-                          <div class="-light">
-                            {%- capture supported_sizes -%}{%- render 'image-size', sizes: '400,600,700,800,900,1000', image: block.settings.push_1_image -%}{%- endcapture -%}
-
-                            {%- assign media_aspect_ratio = block.settings.push_1_image.aspect_ratio | default: block.settings.push_1_image.preview_image.aspect_ratio -%}
-                            <div class="AspectRatio" style="max-width: {{ block.settings.push_1_image.preview_image.width }}px; --aspect-ratio: {{ media_aspect_ratio }}">
-                              {% assign image_url = block.settings.push_1_image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' %}
-                
-                              <img class="Image--lazyLoad Image--fadeIn" data-src="{{ image_url }}" data-widths="[{{ supported_sizes }}]" data-sizes="auto" alt="{{ block.settings.push_1_image.alt | escape }}">
-                              <span class="Image__Loader"></span>
-                
-                              <noscript>
-                                <img src="{{ block.settings.push_1_image | img_url: '600x' }}" alt="{{ block.settings.push_1_image.alt | escape }}">
-                              </noscript>
-                            </div>
-                          </div>
-                        </a>
-                      {%- endif -%}
-                    {%- endif -%}
-                  {%- endfor -%}
-                </li>
-              </ul>
-            {%- endif -%}
-          </li>
-        {%- endfor -%}
-      {%- endif -%}
-    </ul>
-    <div id="headerSubMenu" class="header__submenu"></div>
-  </nav>
-  <div class="header__secondarynav" id="headerSecondaryNav">
-    <div class="header__search" id="headerSearch">
-      <span class="header__search__link" id="panel-search-toggle">
-        <span class="header__search__link__title">
-          Search
-        </span>
-        <form class="search__form u-hidden-desktop" action="{{ routes.search_url }}" method="GET">
-          <input class="search__form__input -mobileMenu" value="" type="text" name="q" autocomplete="off"
-            placeholder="Search here...">
-          <button class="search__form__submit" type="submit"></button>
-        </form>
-      </span>
-      <dialog id="panel-search" class="panel origin--right -transition" style="width: 42vw; max-width: 90%;">
-        <div class="panel__wrapper">
-          <h3>
-            Search
-          </h3>
-          <form class="search__form" action="{{ routes.search_url }}" method="GET">
-            <input class="search__form__input" value="" type="text" name="q" autocomplete="off"
-              placeholder="Search here...">
-            <button class="search__form__submit" type="submit"></button>
-          </form>
-          <div class="panel__content">
-            <div class="content-asset">
-              <h5 class="header__search__title">Suggestions</h5>
-              {%- assign linklist = linklists[section.settings.search_menu] -%}
-              {%- if linklist != empty -%}
-                {%- for link in linklist.links -%}
-                  <a class="header__search__links" href="{{ link.url }}">{{ link.title | escape }}</a>
-                {%- endfor -%}
-              {%- endif -%}
-            </div>
-          </div>
-          <div class="js-close-panel panel__close" data-panel-id="panel-search"><i class="icon icon-close_black"></i>
-          </div>
-        </div>
-      </dialog>
-    </div>
-    <div class="header__account  navmobile__bottomAccount" id="headerAccount">
-      <a class="header__account__link" href="{{ routes.account_url }}">
-        Account
+        </svg>
       </a>
-      <dialog id="panel-account" class="panel origin--right -transition" style="width: 42vw; max-width: 90%;">
-
-        <div class="panel__wrapper">
-          <h3>Account</h3>
-          <div class="js-close-panel panel__close" data-panel-id="panel-account"><i class="icon icon-close_black"></i>
-          </div>
-        </div>
-      </dialog>
     </div>
-    <div class="countrySwitcher__mobileNav  navmobile__bottomAccount" id="countrySwitcher__mobileNav">
-      <div class="countrySwitcher__footer">
-        <h6 class="countrySwitcher__footer__label">Country</h6>
-        <div class="countrySwitcher__footer__action">
-          <div class="dropdown country-selector langDropdown__wrapper"
-            data-url="/on/demandware.store/Sites-Jacquemus-Site/en_DZ/Page-SetLocale" tabindex="0">
-            <span class="btn dropdown-toggle langDropdown__selected" data-selector="dropdownCountrySelector"
-              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              english
+    <span class="header__back" id="headerBack"></span>
+    <nav class="header__nav" id="headerNav">
+      <ul class="header__nav__menu" id="headerMenu">
+        {%- assign linklist = linklists[section.settings.main_menu] -%}
+        {%- if linklist != empty -%}
+          {%- for link in linklist.links -%}
+            <li class="header__nav__list">
+              <span id="{{ link.title | handle }}" class="header__nav__link">
+                {{ link.title | escape }}
+              </span>
+              {%- if link.links != blank -%}
+                <ul role="menu" class="header__nav__submenu" aria-hidden="true" aria-label="{{ link.title | handle }}">
+                  {%- for sub_link in link.links -%}
+                    <li role="presentation" class="header__nav__sublist">
+                      <a href="{{ sub_link.url }}" class="header__nav__sublist__link">
+                        <div class="-dark">
+                          <span>{{ sub_link.title | escape }}</span>
+                          {%- comment -%} <span class="-count">116</span> {%- endcomment -%}
+                        </div>
+                        <span class="-light">
+                          {{ sub_link.title | escape }}
+                        </span>
+                      </a>
+                      {%- if sub_link.links != blank -%}
+                        <ul role="menu" class="header__nav__submenu" aria-hidden="true" aria-label="col1">
+                          {%- for sub_sub_link in sub_link.links -%}
+                            <li role="presentation" class="header__nav__sublist">
+                              <a href="{{ sub_sub_link.url }}"
+                                class="header__nav__sublist__link">
+                                <div class="-dark">
+                                  <span>{{ sub_sub_link.title | escape }}</span>
+                                  {%- comment -%} <span class="-count">116</span> {%- endcomment -%}
+                                </div>
+                                <span class="-light">
+                                  {{ sub_sub_link.title | escape }}
+                                </span>
+                              </a>
+                            </li>
+                          {%- endfor -%}      
+                        </ul>
+                      {%- endif -%}
+                    </li>
+                  {%- endfor -%}
+                  <li role="presentation" class="header__nav__sublist">
+                    {%- assign downcased_link_title = link.title | downcase | strip -%}
+                    {% for block in section.blocks %}
+                      {%- assign trim_mega_menu_name = block.settings.navigation_mega_menu | downcase | strip -%}
+                      {%- if trim_mega_menu_name contains downcased_link_title -%}
+                        {%- if block.settings.push_1_image -%}
+                          <a href="{%- if block.settings.push_1_url != blank -%}{{ block.settings.push_1_url }}{%- else -%}#{%- endif -%}" class="header__nav__sublist__link">
+                            <div class="-dark">
+                              {%- capture supported_sizes -%}{%- render 'image-size', sizes: '400,600,700,800,900,1000', image: block.settings.push_1_image -%}{%- endcapture -%}
+
+                              {%- assign media_aspect_ratio = block.settings.push_1_image.aspect_ratio | default: block.settings.push_1_image.preview_image.aspect_ratio -%}
+                              <div class="AspectRatio" style="max-width: {{ block.settings.push_1_image.preview_image.width }}px; --aspect-ratio: {{ media_aspect_ratio }}">
+                                {% assign image_url = block.settings.push_1_image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' %}
+                  
+                                <img class="Image--lazyLoad Image--fadeIn" data-src="{{ image_url }}" data-widths="[{{ supported_sizes }}]" data-sizes="auto" alt="{{ block.settings.push_1_image.alt | escape }}">
+                                <span class="Image__Loader"></span>
+                  
+                                <noscript>
+                                  <img src="{{ block.settings.push_1_image | img_url: '600x' }}" alt="{{ block.settings.push_1_image.alt | escape }}">
+                                </noscript>
+                              </div>
+                            </div>
+                            <div class="-light">
+                              {%- capture supported_sizes -%}{%- render 'image-size', sizes: '400,600,700,800,900,1000', image: block.settings.push_1_image -%}{%- endcapture -%}
+
+                              {%- assign media_aspect_ratio = block.settings.push_1_image.aspect_ratio | default: block.settings.push_1_image.preview_image.aspect_ratio -%}
+                              <div class="AspectRatio" style="max-width: {{ block.settings.push_1_image.preview_image.width }}px; --aspect-ratio: {{ media_aspect_ratio }}">
+                                {% assign image_url = block.settings.push_1_image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' %}
+                  
+                                <img class="Image--lazyLoad Image--fadeIn" data-src="{{ image_url }}" data-widths="[{{ supported_sizes }}]" data-sizes="auto" alt="{{ block.settings.push_1_image.alt | escape }}">
+                                <span class="Image__Loader"></span>
+                  
+                                <noscript>
+                                  <img src="{{ block.settings.push_1_image | img_url: '600x' }}" alt="{{ block.settings.push_1_image.alt | escape }}">
+                                </noscript>
+                              </div>
+                            </div>
+                          </a>
+                        {%- endif -%}
+                      {%- endif -%}
+                    {%- endfor -%}
+                  </li>
+                </ul>
+              {%- endif -%}
+            </li>
+          {%- endfor -%}
+            <li class="header__nav__list"></li>
+        {%- endif -%}
+      </ul>      
+    </nav>
+    <div class="header__second__group">
+      <div class="header__secondarynav" id="headerSecondaryNav">
+        <div class="header__search" id="headerSearch">
+          <span class="header__search__link" id="panel-search-toggle">
+            <span class="header__search__link__title">
+              Search
             </span>
-            <div class="dropdown-menu dropdown-country-selector" aria-labelledby="dropdownCountrySelector">
-              <a class="dropdown-item langDropdown__link" href="https://www.jacquemus.com/en_dz#" data-locale="fr_DZ"
-                data-currencycode="USD">
-                français
-              </a>
-              <a class="dropdown-item langDropdown__link" href="https://www.jacquemus.com/en_dz#" data-locale="en_DZ"
-                data-currencycode="USD">
-                english
-              </a>
+            <form class="search__form u-hidden-desktop" action="{{ routes.search_url }}" method="GET">
+              <input class="search__form__input -mobileMenu" value="" type="text" name="q" autocomplete="off"
+                placeholder="Search here...">
+              <button class="search__form__submit" type="submit"></button>
+            </form>
+          </span>
+          <dialog id="panel-search" class="panel origin--right -transition" style="width: 42vw; max-width: 90%;">
+            <div class="panel__wrapper">
+              <h3>
+                Search
+              </h3>
+              <form class="search__form" action="{{ routes.search_url }}" method="GET">
+                <input class="search__form__input" value="" type="text" name="q" autocomplete="off"
+                  placeholder="Search here...">
+                <button class="search__form__submit" type="submit"></button>
+              </form>
+              <div class="panel__content">
+                <div class="content-asset">
+                  <h5 class="header__search__title">Suggestions</h5>
+                  {%- assign linklist = linklists[section.settings.search_menu] -%}
+                  {%- if linklist != empty -%}
+                    {%- for link in linklist.links -%}
+                      <a class="header__search__links" href="{{ link.url }}">{{ link.title | escape }}</a>
+                    {%- endfor -%}
+                  {%- endif -%}
+                </div>
+              </div>
+              <div class="js-close-panel panel__close" data-panel-id="panel-search"><i class="icon icon-close_black"></i>
+              </div>
+            </div>
+          </dialog>
+        </div>
+        <div class="header__account  navmobile__bottomAccount" id="headerAccount">
+          <a class="header__account__link" href="{{ routes.account_url }}">
+            Account
+          </a>
+          <dialog id="panel-account" class="panel origin--right -transition" style="width: 42vw; max-width: 90%;">
+
+            <div class="panel__wrapper">
+              <h3>Account</h3>
+              <div class="js-close-panel panel__close" data-panel-id="panel-account"><i class="icon icon-close_black"></i>
+              </div>
+            </div>
+          </dialog>
+        </div>
+        <div class="countrySwitcher__mobileNav  navmobile__bottomAccount" id="countrySwitcher__mobileNav">
+          <div class="countrySwitcher__footer">
+            <h6 class="countrySwitcher__footer__label">Country</h6>
+            <div class="countrySwitcher__footer__action">
+              <span data-selector="panelCountryswitcherToggle" class="countrySwitcher__footer__country">
+                <i class="countrySwitcher__flag flag-icon flag-icon-dz"></i>
+                Algeria (USD)
+              </span>
+              <span class="countrySwitcher__footer__separation"></span>
+              <div class="dropdown country-selector langDropdown__wrapper"
+                data-url="/on/demandware.store/Sites-Jacquemus-Site/en_DZ/Page-SetLocale" tabindex="0">
+                <span class="btn dropdown-toggle langDropdown__selected" data-selector="dropdownCountrySelector"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  english
+                </span>
+                <div class="dropdown-menu dropdown-country-selector" aria-labelledby="dropdownCountrySelector">
+                  <a class="dropdown-item langDropdown__link" href="https://www.jacquemus.com/en_dz#" data-locale="fr_DZ"
+                    data-currencycode="USD">
+                    français
+                  </a>
+                  <a class="dropdown-item langDropdown__link" href="https://www.jacquemus.com/en_dz#" data-locale="en_DZ"
+                    data-currencycode="USD">
+                    english
+                  </a>
+                </div>
+              </div>
+              <span data-selector="country-panel-tmp" style="display:none;"></span>
             </div>
           </div>
-          <span class="countrySwitcher__footer__separation"></span>
-          <span data-selector="panelCountryswitcherToggle" class="countrySwitcher__footer__country">
-            <i class="countrySwitcher__flag flag-icon flag-icon-dz"></i>
-            Algeria (USD)
+        </div>
+      </div>
+      <div class="header__minicart">
+        <div class="u-d-flex" id="panel-minicart-toggle">
+          <span class="header__minicart__link u-hidden-mobile">
+            Cart
           </span>
-          <span data-selector="country-panel-tmp" style="display:none;"></span>
+          <span class="header__minicart__amount" id="minicartAmount"></span>
         </div>
       </div>
     </div>
   </div>
-  <div class="header__minicart">
-    <div class="u-d-flex" id="panel-minicart-toggle">
-      <span class="header__minicart__link u-hidden-mobile">
-        Cart
-      </span>
-      <span class="header__minicart__amount" id="minicartAmount"></span>
-    </div>
-  </div>
+  <div id="headerSubMenu" class="header__submenu">
+  </div> 
   <span id="openNav" class="header__nav__open">
     <span class="header__nav__bar"></span>
     <span class="header__nav__bar"></span>

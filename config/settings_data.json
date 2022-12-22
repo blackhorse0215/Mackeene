@@ -463,7 +463,8 @@
       },
       "product-template": {
         "type": "product-template",
-        "settings": {}
+        "settings": {
+        }
       },
       "product-recommendations": {
         "type": "product-recommendations",
@@ -482,7 +483,10 @@
           "title": "GET 15% OFF",
           "content": "<p>your first order by subscribing to our newsletter.<\/p><p>Use code: <strong>NEW15<\/strong><\/p>",
           "show_newsletter": true,
-          "apparition_delay": 3
+          "apparition_delay": 3,
+          "image": "shopify:\/\/shop_images\/1_14815519-fbe0-4dc2-95d6-b10d08e7d59f.png",
+          "submit_info": "<p>By submitting you are agreeing to be sent exclusive offers, promotions and event invitations by email.<\/p>",
+          "newsletter_text": "<p>(You may unsubscribe at any time. To view our privacy policy click here)<\/p>"
         }
       },
       "list-collections-template": {
@@ -511,7 +515,8 @@
         "block_order": [
           "page-contact-template-0"
         ],
-        "settings": {}
+        "settings": {
+        }
       },
       "blog-template": {
         "type": "blog-template",
@@ -760,11 +765,13 @@
         },
         "header": {
           "type": "header",
-          "settings": {}
+          "settings": {
+          }
         },
         "footer": {
           "type": "footer",
-          "settings": {}
+          "settings": {
+          }
         },
         "slideshow": {
           "type": "slideshow",
@@ -1001,7 +1008,8 @@
         },
         "product-template": {
           "type": "product-template",
-          "settings": {}
+          "settings": {
+          }
         },
         "product-recommendations": {
           "type": "product-recommendations",
@@ -1084,11 +1092,13 @@
         },
         "header": {
           "type": "header",
-          "settings": {}
+          "settings": {
+          }
         },
         "footer": {
           "type": "footer",
-          "settings": {}
+          "settings": {
+          }
         },
         "slideshow": {
           "type": "slideshow",
@@ -1325,7 +1335,8 @@
         },
         "product-template": {
           "type": "product-template",
-          "settings": {}
+          "settings": {
+          }
         },
         "product-recommendations": {
           "type": "product-recommendations",
@@ -1409,11 +1420,13 @@
         },
         "header": {
           "type": "header",
-          "settings": {}
+          "settings": {
+          }
         },
         "footer": {
           "type": "footer",
-          "settings": {}
+          "settings": {
+          }
         },
         "slideshow": {
           "type": "slideshow",
@@ -1650,7 +1663,8 @@
         },
         "product-template": {
           "type": "product-template",
-          "settings": {}
+          "settings": {
+          }
         },
         "product-recommendations": {
           "type": "product-recommendations",
