@@ -562,17 +562,17 @@
           "f11177da-8b79-43e7-8e13-819772727ef2-1670408808b91407a3-0": {
             "type": "collection",
             "settings": {
-              "collection": "bags-pouches",
-              "image": "shopify:\/\/shop_images\/Untitled_design-37.png",
+              "collection": "jackets-doris",
+              "image": "shopify:\/\/shop_images\/Only-the-Necessary.jpg",
               "image_alignment": "center center",
-              "content_position": "bottomLeft"
+              "content_position": "bottomRight"
             }
           },
           "f11177da-8b79-43e7-8e13-819772727ef2-1670408808b91407a3-1": {
             "type": "collection",
             "settings": {
-              "collection": "go-slow",
-              "image": "shopify:\/\/shop_images\/2_48a5fa0b-dc75-4b67-a636-45c31d7456c3.png",
+              "collection": "hoodies-lee",
+              "image": "shopify:\/\/shop_images\/Even-Slower.jpg",
               "image_alignment": "center center",
               "content_position": "bottomLeft"
             }
@@ -582,7 +582,7 @@
             "disabled": true,
             "settings": {
               "collection": "",
-              "image": "shopify:\/\/shop_images\/MACKEENE_-_Web_slides-2.png",
+              "image": "shopify:\/\/shop_images\/lo-res-23_900x_fe401624-5783-4095-ad24-4deec2863b3e.webp",
               "image_alignment": "center center",
               "content_position": "bottomLeft"
             }
@@ -596,34 +596,24 @@
               "image_alignment": "center center",
               "content_position": "bottomLeft"
             }
-          },
-          "b7617b17-c674-48aa-a641-d67281eb2712": {
-            "type": "collection",
-            "disabled": true,
-            "settings": {
-              "collection": "",
-              "image": "shopify:\/\/shop_images\/MACKEENE_-_Web_slides_1.png",
-              "image_alignment": "center center",
-              "content_position": "bottomLeft"
-            }
           }
         },
         "block_order": [
           "f11177da-8b79-43e7-8e13-819772727ef2-1670408808b91407a3-0",
           "f11177da-8b79-43e7-8e13-819772727ef2-1670408808b91407a3-1",
           "f11177da-8b79-43e7-8e13-819772727ef2-1670408808b91407a3-2",
-          "fa3ee745-4437-4c8a-9d40-ba36fc7d4904",
-          "b7617b17-c674-48aa-a641-d67281eb2712"
+          "fa3ee745-4437-4c8a-9d40-ba36fc7d4904"
         ],
         "settings": {
           "add_spacing": false,
           "expand_collection": false,
           "stack_on_mobile": true,
-          "text_color": "#ffffff"
+          "text_color": "#7c7c7c"
         }
       },
       "609b251c-380c-4620-9cfd-b5f4b730af16": {
         "type": "featured-collections",
+        "disabled": true,
         "blocks": {
           "609b251c-380c-4620-9cfd-b5f4b730af16-16704088089308d7eb-0": {
             "type": "collection",
@@ -646,9 +636,11 @@
       },
       "0a974e8e-bf0e-424b-b5db-e94a28f3281c": {
         "type": "slideshow",
+        "disabled": true,
         "blocks": {
           "642e3495-a711-446b-97cf-72e83e90cf77": {
             "type": "video",
+            "disabled": true,
             "settings": {
               "video_url": "https:\/\/www.youtube.com\/watch?v=GqUWqQhdQAU",
               "mobile_video_url": "https:\/\/www.youtube.com\/watch?v=GqUWqQhdQAU",
@@ -665,8 +657,8 @@
           "0a974e8e-bf0e-424b-b5db-e94a28f3281c-167085709472da8b9c-0": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/E827900B-E8BB-4F26-A941-91C464FF424E.jpg",
-              "mobile_image": "shopify:\/\/shop_images\/MACKEENE_-_Web_slides_Mobile.png",
+              "image": "shopify:\/\/shop_images\/MACKEENE---2022-07-18---SHIRT-HARRY-STUDIO---Desktop.jpg",
+              "mobile_image": "shopify:\/\/shop_images\/MACKEENE---2022-07-18---SHIRT-HARRY-STUDIO---Desktop.jpg",
               "apply_overlay": false,
               "content_position": "bottomCenter",
               "subheading": "A curated selection of special gifts to celebrate the season",
@@ -692,13 +684,81 @@
           "button_background": "#ffffff",
           "header_color": "#efefef"
         }
+      },
+      "916b6dbb-06d4-46c7-b1eb-22a404081084": {
+        "type": "collection-list",
+        "blocks": {
+          "916b6dbb-06d4-46c7-b1eb-22a404081084-1671879620aeb2ffa1-0": {
+            "type": "collection",
+            "settings": {
+              "collection": "",
+              "image": "shopify:\/\/shop_images\/E827900B-E8BB-4F26-A941-91C464FF424E.jpg",
+              "image_alignment": "center center",
+              "content_position": "bottomLeft"
+            }
+          },
+          "916b6dbb-06d4-46c7-b1eb-22a404081084-1671879620aeb2ffa1-1": {
+            "type": "collection",
+            "settings": {
+              "collection": "",
+              "image": "shopify:\/\/shop_images\/1_14815519-fbe0-4dc2-95d6-b10d08e7d59f.png",
+              "image_alignment": "center center",
+              "content_position": "bottomLeft"
+            }
+          },
+          "916b6dbb-06d4-46c7-b1eb-22a404081084-1671879620aeb2ffa1-2": {
+            "type": "collection",
+            "settings": {
+              "collection": "",
+              "image": "shopify:\/\/shop_images\/4_82fad05d-aa37-4b5a-bd16-adcf36c4ec58.png",
+              "image_alignment": "center center",
+              "content_position": "bottomLeft"
+            }
+          },
+          "27a703da-5e91-48e5-af6a-5592bbb72de1": {
+            "type": "collection",
+            "settings": {
+              "collection": "",
+              "image": "shopify:\/\/shop_images\/MACKEENE_-_Web_slides.png",
+              "image_alignment": "center center",
+              "content_position": "bottomLeft"
+            }
+          }
+        },
+        "block_order": [
+          "916b6dbb-06d4-46c7-b1eb-22a404081084-1671879620aeb2ffa1-0",
+          "916b6dbb-06d4-46c7-b1eb-22a404081084-1671879620aeb2ffa1-1",
+          "916b6dbb-06d4-46c7-b1eb-22a404081084-1671879620aeb2ffa1-2",
+          "27a703da-5e91-48e5-af6a-5592bbb72de1"
+        ],
+        "settings": {
+          "add_spacing": false,
+          "expand_collection": false,
+          "stack_on_mobile": true,
+          "text_color": "#ffffff"
+        }
       }
     },
     "content_for_index": [
       "0a974e8e-bf0e-424b-b5db-e94a28f3281c",
       "f11177da-8b79-43e7-8e13-819772727ef2",
-      "609b251c-380c-4620-9cfd-b5f4b730af16"
-    ]
+      "609b251c-380c-4620-9cfd-b5f4b730af16",
+      "916b6dbb-06d4-46c7-b1eb-22a404081084"
+    ],
+    "blocks": {
+      "13057235355128461448": {
+        "type": "shopify:\/\/apps\/cozy-country-redirect\/blocks\/CozyStaticScript\/7b44aa65-e072-42a4-8594-17bbfd843785",
+        "disabled": true,
+        "settings": {
+        }
+      },
+      "15323590465973626552": {
+        "type": "shopify:\/\/apps\/ai-language-translate-langshop\/blocks\/langshop\/84899e01-2b29-42af-99d6-46d16daa2111",
+        "disabled": true,
+        "settings": {
+        }
+      }
+    }
   },
   "presets": {
     "Allure": {

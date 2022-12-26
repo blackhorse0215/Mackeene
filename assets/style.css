@@ -18581,7 +18581,8 @@ a:focus {
 }
 
 .header__background.-active {
-  transform: translateY(0)
+  transform: translateY(0);
+  border-bottom: 1px solid;
 }
 
 .header.-hide {
@@ -18603,7 +18604,7 @@ a:focus {
 }
 
 .header.-active {
-  transform: translateY(0%)
+  transform: translateY(0%);
 }
 
 @media screen and (min-width: 1024px) {
@@ -18924,7 +18925,8 @@ body.-blocScroll .header {
 }
 
 .header__nav__maskedSubmenu>.header__nav__sublist>.header__nav__submenu {
-  display: block
+  display: block;
+  padding-left: 10px;
 }
 
 .header__nav__maskedSubmenu>.header__nav__sublist.-active {
